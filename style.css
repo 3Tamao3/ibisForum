@@ -1,0 +1,158 @@
+.centerBox {
+  border: 2px solid lightgray;
+  max-width: 720px;
+  margin: 75px auto;
+  padding: 20px 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.centerBox img {
+  width: 100px;
+}
+
+.spracheButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.spracheButtons button {
+  width: 50px;
+  height: 45px;
+  padding: 0;
+}
+
+h1 {
+  clear: both;
+}
+
+.centerBox label {
+  font-size: 18px;
+}
+
+.centerBox p {
+  font-size: 18px;
+  text-align: left;
+  margin: 1px 0px 12px;
+}
+
+.centerBox input[type="text"],
+.centerBox input[type="email"],
+.centerBox input[type="tel"],
+.centerBox input[type="date"],
+.centerBox input[type="file"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 2px solid #000;
+  margin-bottom: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+.genderSection {
+  text-align: left;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.genderSection label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 15px;
+}
+
+.radioSelect {
+  transform: scale(1.2);
+}
+
+.centerBox button,
+.centerBox input[type="submit"] {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 2px solid #000;
+  background: #fff;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.centerBox button:hover,
+.centerBox input[type="submit"]:hover {
+  border: 2px solid rgb(62, 62, 217);
+}
+
+div {
+  text-align: left;
+}
+
+.noteText {
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: 2px solid #000;
+  margin-bottom: 18px;
+  resize: none;
+  line-height: normal;
+  vertical-align: top;
+}
+
+select {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 2px solid #000;
+  margin-top: 6px;
+  background-color: #fff;
+}
+
+.adress {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.adress div {
+  flex: 1;
+}
+
+.contactBox {
+  border: #000;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.KontaktJugendlich {
+  display: none;
+}
+
+.info-icon {
+  cursor: help;
+  font-size: 18px;
+  color: #959595;
+  margin-left: 5px;
+}
+
+.info-icon:hover {
+  transition: color 0.3s;
+  color: #000;
+}
