@@ -47,7 +47,7 @@
             🛈
           </span> </label><br />
 
-        <select required name="provider" data-i18n-placeholder="provider_ph">
+        <select required class="providerDropdown" name="provider" data-i18n-placeholder="provider_ph">
           <option value="" disabled selected>Bitte auswählen</option>
           <option value="Sprungbrett">Sprungbrett</option>
           <option value="ABO_Jugend">ABO Jugend</option>
@@ -56,7 +56,10 @@
           <option value="AMS">Sonstige</option>
         </select>
         <br><br>
-        <input required type="text" id="provider" name="provider" data-i18n-placeholder="provider_ph" /><br />
+        <div class="providerElse">
+          <input required type="text" id="provider" name="provider"
+            data-i18n-placeholder="provider_ph" /><br />
+        </div>
       </div>
 
       <div>

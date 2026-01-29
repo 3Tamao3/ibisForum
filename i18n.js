@@ -223,6 +223,8 @@ const translations = {
   },
 };
 
+//To-Do: Cookies managen
+
 function setLanguage(lang) {
   localStorage.setItem("lang", lang);
   document.documentElement.lang = lang;
