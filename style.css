@@ -56,6 +56,10 @@ h1 {
   margin-bottom: 18px;
 }
 
+input:invalid {
+  border: 2px solid red;
+}
+
 .hidden {
   display: none;
 }
