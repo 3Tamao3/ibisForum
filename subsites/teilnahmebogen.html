@@ -28,7 +28,7 @@
       <div>
         <label for="lehrform" data-i18n="choose_lehrform"> </label>
         <br />
-        <select name="lehrform" id="lehrform">
+        <select required name="lehrform" id="lehrform">
           <option value="ÜBN1">ÜBN1</option>
           <option value="ÜBN2">ÜBN2</option>
           <option value="ÜBV">ÜBV</option>
@@ -39,7 +39,7 @@
       <div>
         <label for="lehrberuf" data-i18n="choose_lehrberuf"> </label>
         <br />
-        <select name="lehrberuf">
+        <select required name="lehrberuf">
           <option value="applikationsentwickler - coding" data-i18n="job_appdev">
             Applikationsentwickler - Coding
           </option>
@@ -71,27 +71,27 @@
       <br />
       <div>
         <p data-i18n="vorlehrzeit"></p>
-        <input type="radio" name="vorlehrzeit" value="vorlehrzeit_ja" />
+        <input required type="radio" name="vorlehrzeit" value="vorlehrzeit_ja" />
         <label for="vorlehrzeit_ja" data-i18n="vorlehrzeit_ja"></label><br />
-        <input type="radio" name="vorlehrzeit" value="vorlehrzeit_nein" />
+        <input required type="radio" name="vorlehrzeit" value="vorlehrzeit_nein" />
         <label for="vorlehrzeit_nein" data-i18n="no"></label><br />
       </div>
       <br />
       <div>
         <p data-i18n="berufschule">Berufschule</p>
-        <input type="radio" name="berufschule" value="berufschule_laufend" />
+        <input required type="radio" name="berufschule" value="berufschule_laufend" />
         <label for="berufschule_laufend" data-i18n="berufschule_laufend">laufend</label><br />
-        <input type="radio" name="berufschule" value="berufschule_nein" />
+        <input required type="radio" name="berufschule" value="berufschule_nein" />
         <label for="berufschule_nein" data-i18n="no">Nein</label><br />
       </div>
       <br />
       <div>
         <p data-i18n="gender"></p>
-        <input type="radio" id="male" name="gender" value="male" />
+        <input required type="radio" id="male" name="gender" value="male" />
         <label for="male" data-i18n="male">Männlich</label><br />
-        <input type="radio" id="female" name="gender" value="female" />
+        <input required type="radio" id="female" name="gender" value="female" />
         <label for="female" data-i18n="female">Weiblich</label><br />
-        <input type="radio" id="diverse" name="gender" value="diverse" />
+        <input required type="radio" id="diverse" name="gender" value="diverse" />
         <label for="diverse" data-i18n="diverse">Divers</label><br />
       </div>
       <br />

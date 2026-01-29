@@ -100,7 +100,7 @@ const translations = {
     city_ph: "Wien",
     phone_ph: "+43 664 1234567",
     email_ph: "beispiel@domain.com",
-    provider_ph: "Sprubgbrett / ABO Jugend / BFI / AMS",
+    provider_ph: "Sonstige",
     note_ph: "Hier können Sie Ihre Notizen eingeben.",
 
     // success page
@@ -132,7 +132,6 @@ const translations = {
     // registrierung.html
     registration_title: "Registration Form",
     provider: "Provider:",
-    provider_ph: "Sprubgbrett / ABO Jugend / BFI / AMS",
     career_check_question: "Career Check",
     provider_info:
       "The provider is the organization that runs the course or program, for example the employment service or a training institute.",
@@ -213,6 +212,7 @@ const translations = {
     phone_ph: "+43 664 1234567",
     email_ph: "example@domain.com",
     note_ph: "You can enter your notes here.",
+    provider_ph: "Else",
 
     // success page
     success_title: "Successfully submitted!",

@@ -47,6 +47,15 @@
             🛈
           </span> </label><br />
 
+        <select required name="provider" data-i18n-placeholder="provider_ph">
+          <option value="" disabled selected>Bitte auswählen</option>
+          <option value="Sprungbrett">Sprungbrett</option>
+          <option value="ABO_Jugend">ABO Jugend</option>
+          <option value="BFI">BFI</option>
+          <option value="AMS">AMS</option>
+          <option value="AMS">Sonstige</option>
+        </select>
+        <br><br>
         <input required type="text" id="provider" name="provider" data-i18n-placeholder="provider_ph" /><br />
       </div>
 
@@ -71,7 +80,7 @@
         </div>
         <div>
           <label for="appointment" data-i18n="appointments"></label>
-          <input type="text" id="appointment" name="appointment" placeholder="DD-MM-YYYY" />
+          <input required type="text" id="appointment" name="appointment" placeholder="DD-MM-YYYY" />
         </div>
       </div>
       <button type="submit" class="btn-liquid liquid" data-i18n="submit"></button>
@@ -121,6 +130,7 @@
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script>
     flatpickr("#appointment", {
+      allowInput: true,
       dateFormat: "d-m-Y",
       minDate: "today",
       maxDate: new Date().fp_incr(30),
