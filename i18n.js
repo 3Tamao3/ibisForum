@@ -5,7 +5,7 @@ const translations = {
     career_check_button: "Berufs-Check",
     checkin: "Teilnahmebogen / Check In",
 
-    // general (shared)
+    // Multiplle pages
     lastname: "Nachname*:",
     firstname: "Vorname*:",
     scnr: "Sozialversicherungsnummer*",
@@ -117,7 +117,7 @@ const translations = {
     career_check_button: "Career Check",
     checkin: "Registration / Check In",
 
-    // general (shared)
+    // multiple pages (shared)
     lastname: "Last name*:",
     firstname: "First name*:",
     scnr: "Social Security Number*:",

@@ -1,31 +1,54 @@
 function calculateChecksum(svnr) {
-  var weights = [3, 7, 9, 0, 5, 8, 4, 2, 1, 6];
-  var sum = 0;
 
-  for (var i = 0; i < weights.length; i++) {
-    sum = sum + weights[i] * parseInt(svnr[i], 10);
+  // Each position has a fixed multiplier
+  var multipliers = [3, 7, 9, 0, 5, 8, 4, 2, 1, 6];
+
+  var total = 0;
+
+  for (var i = 0; i < multipliers.length; i++) {
+
+    // Convert character to integer
+    var digit = parseInt(svnr[i], 10);
+    total = total + (digit * multipliers[i]);
   }
-
-  return sum % 11;
+  return total % 11;
 }
+
 
 function isValidSvnr(svnr) {
+
+  // Remove everything that is not a number
   svnr = svnr.replace(/\D/g, "");
 
+  // Must be 10 digits long
   if (svnr.length !== 10) return false;
-  if (svnr.charAt(0) === "0") return false;
 
-  var checksum = calculateChecksum(svnr);
-  var controlDigit = parseInt(svnr.charAt(3), 10);
+  // First digit may not be 0
+  if (svnr[0] === "0") return false;
 
-  return checksum === controlDigit;
+  var calculatedChecksum = calculateChecksum(svnr);
+
+  var controlDigit = parseInt(svnr[3], 10);
+
+
+  if (calculatedChecksum === controlDigit) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-var svnrInput = document.getElementById("scnr");
-var message = document.getElementById("svnrMessage");
+var inputField = document.getElementById("scnr");
+var infoMessage = document.getElementById("svnrMessage");
 
-if (svnrInput && message) {
-  svnrInput.addEventListener("input", function () {
-    message.style.display = isValidSvnr(svnrInput.value) ? "block" : "none";
+if (inputField && infoMessage) {
+  inputField.addEventListener("input", function () {
+
+    if (isValidSvnr(inputField.value)) {
+      infoMessage.style.display = "block";
+    } else {
+      infoMessage.style.display = "none";
+    }
+
   });
 }

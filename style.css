@@ -153,8 +153,7 @@ select {
 }
 
 .btn-liquid.liquid {
-  background: linear-gradient(rgba(0, 85, 164) 0 0) no-repeat
-    calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
+  background: linear-gradient(rgba(0, 85, 164) 0 0) no-repeat calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
   transition:
     0.2s var(--t, 0s),
     background-position 0.5s calc(0.2s - var(--t, 0s));
