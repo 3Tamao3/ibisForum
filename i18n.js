@@ -6,12 +6,12 @@ const translations = {
     checkin: "Teilnahmebogen / Check In",
 
     // Multiplle pages
-    lastname: "Nachname*:",
-    firstname: "Vorname*:",
-    scnr: "Sozialversicherungsnummer*",
-    phone: "Telefonnummer*:",
-    email: "E-Mail*:",
-    appointments: "Termine*:",
+    lastname: "Nachname:",
+    firstname: "Vorname:",
+    scnr: "Sozialversicherungsnummer",
+    phone: "Telefonnummer:",
+    email: "E-Mail:",
+    appointments: "Termine:",
     yes: "Ja",
     no: "Nein",
     submit: "Absenden",
@@ -19,8 +19,8 @@ const translations = {
 
     // registrierung.html
     registration_title: "Registrierung",
-    provider: "Träger*:",
-    career_check_question: "Berufs-Check*",
+    provider: "Träger:",
+    career_check_question: "Berufs-Check",
     provider_info:
       "Der Träger ist die Organisation, die den Kurs oder die Maßnahme durchführt, zum Beispiel AMS, BFI oder Jugend am Werk.",
 
@@ -31,47 +31,47 @@ const translations = {
     choose_lehrform: "Bitte wählen Sie eine Lehrform aus:",
     choose_lehrberuf: "Bitte wählen Sie einen Lehrberuf aus:",
 
-    vorlehrzeit: "Vorlehrzeit*",
+    vorlehrzeit: "Vorlehrzeit",
     vorlehrzeit_ja: "Ja",
-    berufschule: "Berufschule*",
+    berufschule: "Berufschule",
     berufschule_laufend: "Laufend",
 
-    gender: "Geschlecht*",
+    gender: "Geschlecht",
     male: "Männlich",
     female: "Weiblich",
     diverse: "Divers",
 
     scnr_text: "Die SVNr ist korrekt!",
 
-    birthday: "Geburtstag*",
-    birth_country: "Geburtsland*",
-    birth_city: "Geburtsort*",
-    street: "Straße*",
-    house_number: "Hausnummer*",
-    staircase: "Stiege*",
-    door: "Tür*",
-    zip: "PLZ*",
-    city: "Ort*",
+    birthday: "Geburtstag",
+    birth_country: "Geburtsland",
+    birth_city: "Geburtsort",
+    street: "Straße",
+    house_number: "Hausnummer",
+    staircase: "Stiege",
+    door: "Tür",
+    zip: "PLZ",
+    city: "Ort",
 
-    registration_form: "Meldezettel* (JPEG/JPG, PNG oder PDF)",
-    birth_cert: "Geburtsurkunde* (JPEG/JPG, PNG oder PDF)",
-    citizenship: "Staatsbürgerschaftsnachweis* (JPEG/JPG, PNG oder PDF)",
-    bank_card: "Kontokarte* (JPEG/JPG, PNG oder PDF)",
-    ecard: "E-Card* (JPEG/JPG, PNG oder PDF)",
-    residence: "Aufenthaltstitel* (JPEG/JPG, PNG oder PDF)",
+    registration_form: "Meldezettel (JPEG/JPG, PNG oder PDF)",
+    birth_cert: "Geburtsurkunde (JPEG/JPG, PNG oder PDF)",
+    citizenship: "Staatsbürgerschaftsnachweis (JPEG/JPG, PNG oder PDF)",
+    bank_card: "Kontokarte (JPEG/JPG, PNG oder PDF)",
+    ecard: "E-Card (JPEG/JPG, PNG oder PDF)",
+    residence: "Aufenthaltstitel (JPEG/JPG, PNG oder PDF)",
 
     note: "Ihre Notizen: (Optional)",
 
     // teilnahmebogen.html
     contact: "Kontaktperson:",
-    guardian: "Erziehungsberechtigte/r*:",
+    guardian: "Erziehungsberechtigte/r:",
     father: "Vater:",
     mother: "Mutter:",
     other: "Andere Person:",
     advicer: "Betreuer/in: (optional)",
 
     // dropdowns
-    last_school: "Zuletzt besuchte Schule*:",
+    last_school: "Zuletzt besuchte Schule:",
     school_compulsory: "Pflichtschule",
 
     job_appdev: "Applikationsentwickler - Coding",
@@ -118,12 +118,12 @@ const translations = {
     checkin: "Registration / Check In",
 
     // multiple pages (shared)
-    lastname: "Last name*:",
-    firstname: "First name*:",
-    scnr: "Social Security Number*:",
-    phone: "Phone number*:",
-    email: "E-Mail*:",
-    appointments: "Appointments*:",
+    lastname: "Last name:",
+    firstname: "First name:",
+    scnr: "Social Security Number:",
+    phone: "Phone number:",
+    email: "E-Mail:",
+    appointments: "Appointments:",
     yes: "Yes",
     no: "No",
     submit: "Submit",
@@ -131,9 +131,9 @@ const translations = {
 
     // registrierung.html
     registration_title: "Registration Form",
-    provider: "Provider*:",
+    provider: "Provider:",
     provider_ph: "Sprubgbrett / ABO Jugend / BFI / AMS",
-    career_check_question: "Career Check*",
+    career_check_question: "Career Check",
     provider_info:
       "The provider is the organization that runs the course or program, for example the employment service or a training institute.",
 
@@ -141,36 +141,36 @@ const translations = {
     checkin_title: "Registration / Check-In",
     admin_note:
       "Please fill in the next four fields only in the presence of an administrator.",
-    choose_lehrform: "Please choose a training format*:",
-    choose_lehrberuf: "Please choose an apprenticeship/occupation*:",
-    vorlehrzeit: "Pre-apprenticeship period*",
+    choose_lehrform: "Please choose a training format:",
+    choose_lehrberuf: "Please choose an apprenticeship/occupation:",
+    vorlehrzeit: "Pre-apprenticeship period",
     vorlehrzeit_ja: "Yes",
-    berufschule: "Vocational school*",
+    berufschule: "Vocational school",
     berufschule_laufend: "Ongoing",
 
-    gender: "Gender*",
+    gender: "Gender",
     male: "Male",
     female: "Female",
     diverse: "Diverse",
 
     scnr_text: "The SSN is correct!",
 
-    birthday: "Date of birth*",
-    birth_country: "Country of birth*",
-    birth_city: "City of birth*",
-    street: "Street*",
-    house_number: "Housenr.*",
-    staircase: "Staircase*",
-    door: "Door*",
-    zip: "ZIP*",
-    city: "City*",
+    birthday: "Date of birth",
+    birth_country: "Country of birth",
+    birth_city: "City of birth",
+    street: "Street",
+    house_number: "Housenr.",
+    staircase: "Staircase",
+    door: "Door",
+    zip: "ZIP",
+    city: "City",
 
-    registration_form: "Registration form* (JPEG/JPG, PNG or PDF)",
-    birth_cert: "Birth certificate* (JPEG/JPG, PNG or PDF)",
-    citizenship: "Proof of citizenship* (JPEG/JPG, PNG or PDF)",
-    bank_card: "Bank card* (JPEG/JPG, PNG or PDF)",
-    ecard: "Health card* (JPEG/JPG, PNG or PDF)",
-    residence: "Residence permit* (JPEG/JPG, PNG or PDF)",
+    registration_form: "Registration form (JPEG/JPG, PNG or PDF)",
+    birth_cert: "Birth certificate (JPEG/JPG, PNG or PDF)",
+    citizenship: "Proof of citizenship (JPEG/JPG, PNG or PDF)",
+    bank_card: "Bank card (JPEG/JPG, PNG or PDF)",
+    ecard: "Health card (JPEG/JPG, PNG or PDF)",
+    residence: "Residence permit (JPEG/JPG, PNG or PDF)",
 
     note: "Your notes: (Optional)",
 
@@ -183,7 +183,7 @@ const translations = {
     advicer: "Adviser (optional)",
 
     // dropdowns
-    last_school: "Last school attended*:",
+    last_school: "Last school attended:",
     school_compulsory: "Compulsory school",
 
     job_appdev: "Application Developer - Coding",

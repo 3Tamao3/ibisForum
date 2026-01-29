@@ -136,15 +136,15 @@
       <div class="sameLine">
         <div>
           <label data-i18n="house_number">Hausnummer</label>
-          <input placeholder="4" type="text" id="houseNumber" name="houseNumber" pattern="[A-Za-z0-9]+" />
+          <input required placeholder="4" type="text" id="houseNumber" name="houseNumber" pattern="[A-Za-z0-9]+" />
         </div>
         <div>
           <label data-i18n="staircase">Stiege</label>
-          <input placeholder="3" type="text" id="staircase" name="staircase" pattern="[A-Za-z0-9]+" />
+          <input required placeholder="3" type="text" id="staircase" name="staircase" pattern="[A-Za-z0-9]+" />
         </div>
         <div>
           <label data-i18n="door">Tür</label>
-          <input placeholder="15" type="text" id="door" name="door" pattern="[A-Za-z0-9]+" />
+          <input required placeholder="15" type="text" id="door" name="door" pattern="[A-Za-z0-9]+" />
         </div>
       </div>
       <div class="sameLine">
@@ -288,7 +288,7 @@
       </div>
       <div>
         <label data-i18n="residence">Aufenthaltstitel (JPEG/JPG, PNG oder PDF)</label><br />
-        <input required type="file" id="residence" name="residence" />
+        <input type="file" id="residence" name="residence" />
       </div>
       <button class="btn-liquid liquid" type="submit" data-i18n="submit">
         Absenden
@@ -307,6 +307,7 @@
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script>
     flatpickr("#birthday", {
+      allowInput: true,
       dateFormat: "d-m-Y",
       maxDate: new Date().setFullYear(new Date().getFullYear() - 14),
     });
