@@ -21,17 +21,21 @@
     </div>
     <h1 data-i18n="registration_title"></h1>
     <form action="../connect.php" method="post" enctype="multipart/form-data">
+      <div class="sameLine">
       <div>
         <label data-i18n="lastname"></label><br />
-        <input required type="text" id="lastName" name="lastName" data-i18n-placeholder="lastname_ph" /><br />
+        <input required type="text" id="lastName" name="lastName" pattern="[A-Za-z]+"
+          data-i18n-placeholder="lastname_ph" /><br />
       </div>
       <div>
         <label data-i18n="firstname"></label><br />
-        <input required type="text" id="firstName" name="firstName" data-i18n-placeholder="firstname_ph" /><br />
+        <input required type="text" id="firstName" name="firstName" pattern="[A-Za-z]+"
+          data-i18n-placeholder="firstname_ph" /><br />
+      </div>
       </div>
       <div>
         <label data-i18n="scnr"></label><br />
-        <input required type="text" id="scnr" name="scnr" data-i18n-placeholder="scnr_ph" /><br />
+        <input required type="text" id="scnr" name="scnr" pattern="[0-9]{10}" data-i18n-placeholder="scnr_ph" /><br />
       </div>
       <p data-i18n="scnr_text" id="svnrMessage" style="color: rgb(7, 173, 7); display: none">
         SVNr ist korrekt!
@@ -57,7 +61,8 @@
       <div id="careerExtraFields" style="display: none">
         <div>
           <label data-i18n="phone"></label><br />
-          <input required type="tel" id="phone" name="phone" data-i18n-placeholder="phone_ph" /><br />
+          <input required type="tel" id="phone" name="phone" pattern="\+?[0-9\s\-]+"
+            data-i18n-placeholder="phone_ph" /><br />
         </div>
         <div>
           <label data-i18n="email"></label><br />
