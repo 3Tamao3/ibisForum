@@ -34,6 +34,17 @@
         </div>
       </div>
       <div>
+        <label data-i18n="familyStatus"></label><br />
+        <select required class="providerDropdown" name="provider" data-i18n-placeholder="provider_ph">
+          <option value="" disabled selected>Bitte auswählen</option>
+          <option value="Sprungbrett">Ledig</option>
+          <option value="ABO_Jugend">ABO Verheiratet</option>
+          <option value="BFI">Geschieden</option>
+          <option value="AMS">verwitwet</option>
+        </select>
+      </div>
+      <br>
+      <div>
         <label data-i18n="scnr"></label><br />
         <input required type="text" id="scnr" name="scnr" pattern="[0-9]{10}" data-i18n-placeholder="scnr_ph" /><br />
       </div>
@@ -47,18 +58,55 @@
             🛈
           </span> </label><br />
 
-        <select required class="providerDropdown" name="provider" data-i18n-placeholder="provider_ph">
+        <select required class="providerDropdown" name="provider_select" id="provider_select"
+          onchange="checkSonstigeProvider()">
           <option value="" disabled selected>Bitte auswählen</option>
-          <option value="Sprungbrett">Sprungbrett</option>
-          <option value="ABO_Jugend">ABO Jugend</option>
-          <option value="BFI">BFI</option>
+
           <option value="AMS">AMS</option>
-          <option value="AMS">Sonstige</option>
+          <option value="BFI">BFI</option>
+          <option value="IP_Center">IP Center</option>
+          <option value="IT_Works">IT Works</option>
+          <option value="JAW">JAW</option>
+          <option value="Sprungbrett">Sprungbrett</option>
+          <option value="UEBA_Blick">ÜBA Blick</option>
+          <option value="VHS">VHS</option>
+          <option value="WUK">WUK</option>
+          <option value="Update_Training">Update Training</option>
+          <option value="Income">Income</option>
+          <option value="Context">Context</option>
+          <option value="Afit">Afit</option>
+          <option value="die_Berater">die Berater</option>
+          <option value="Wienwork">Wienwork</option>
+          <option value="Integrationshaus">Integrationshaus</option>
+          <option value="Berufsboerse">Berufsbörse</option>
+          <option value="BEST">BEST</option>
+          <option value="UEBA_Check_In">ÜBA Check In</option>
+          <option value="oesb_Consulting">ösb Consulting</option>
+          <option value="Jugendcollege_Wien_Advanced_Ost">Jugendcollege Wien - advanced Ost ibis acam</option>
+          <option value="Caritas">Caritas</option>
+          <option value="UEBA_Flieger">ÜBA Flieger</option>
+          <option value="ProVita">ProVita Bildungs GmbH</option>
+          <option value="Jobmove">Jobmove</option>
+          <option value="ABO_Jugend">ABO Jugend</option>
+          <option value="Volkshilfe">Volkshilfe</option>
+          <option value="Hanreich_Partner">Hanreich-Partner</option>
+          <option value="OEJAB">ÖJAB</option>
+          <option value="Berufsevent">Berufsevent</option>
+          <option value="Equalizent">Equalizent</option>
+          <option value="Jugendwerkstatt_IP_Center">Jugendwerkstatt / IP-Center</option>
+          <option value="Mentor">Mentor</option>
+          <option value="Jugendcollege_Advanced_Sued_BEST">Jugendcollege advanced SÜD - BEST</option>
+          <option value="WITAF">WITAF</option>
+          <option value="Jugendcollege_BFI">Jugendcollege BFI</option>
+          <option value="Jugendcollege_Advanced_Sued_Mentor">Jugendcollege advanced SÜD - Mentor</option>
+          <option value="Verein_TIW">Verein-TIW</option>
+          <option value="Sonstige">Sonstige</option>
         </select>
         <br><br>
-        <div class="providerElse">
-          <input required type="text" id="provider" name="provider"
-            data-i18n-placeholder="provider_ph" /><br />
+        <div>
+          <input type="text" id="provider_sonstige" name="provider_sonstige" placeholder="Bitte Sonstige angeben"
+            style="display:none;" />
+
         </div>
       </div>
 
@@ -145,6 +193,23 @@
       ],
     });
   </script>
+  <script>
+    function checkSonstigeProvider() {
+      const dropdown = document.getElementById("provider_select");
+      const input = document.getElementById("provider_sonstige");
+
+      const isSonstige = dropdown.value === "sonstige";
+
+      input.style.display = isSonstige ? "block" : "none";
+      input.required = isSonstige;
+
+      if (!isSonstige) {
+        input.value = "";
+      }
+    }
+    document.addEventListener("DOMContentLoaded", checkSonstigeProvider);
+  </script>
+
 </body>
 
 </html>

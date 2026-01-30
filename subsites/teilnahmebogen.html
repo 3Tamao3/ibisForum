@@ -29,6 +29,7 @@
         <label for="lehrform" data-i18n="choose_lehrform"> </label>
         <br />
         <select required name="lehrform" id="lehrform">
+          <option value="" disabled selected>Bitte auswählen</option>
           <option value="ÜBN1">ÜBN1</option>
           <option value="ÜBN2">ÜBN2</option>
           <option value="ÜBV">ÜBV</option>
@@ -40,6 +41,7 @@
         <label for="lehrberuf" data-i18n="choose_lehrberuf"> </label>
         <br />
         <select required name="lehrberuf">
+          <option value="" disabled selected>Bitte auswählen</option>
           <option value="applikationsentwickler - coding" data-i18n="job_appdev">
             Applikationsentwickler - Coding
           </option>
@@ -107,6 +109,17 @@
             data-i18n-placeholder="lastname_ph" />
         </div>
       </div>
+      <div>
+        <label data-i18n="familyStatus"></label><br />
+        <select required class="providerDropdown" name="provider" data-i18n-placeholder="provider_ph">
+          <option value="" disabled selected>Bitte auswählen</option>
+          <option value="Sprungbrett">Ledig</option>
+          <option value="ABO_Jugend">ABO Verheiratet</option>
+          <option value="BFI">Geschieden</option>
+          <option value="AMS">verwitwet</option>
+        </select>
+      </div>
+      <br>
       <div>
         <label data-i18n="scnr">SVNr.</label><br />
         <input required type="text" placeholder="1234 567890" id="scnr" name="scnr" pattern="[0-9]{10}" />

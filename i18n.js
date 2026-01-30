@@ -16,6 +16,7 @@ const translations = {
     no: "Nein",
     submit: "Absenden",
     back: "Zurück",
+    familyStatus: "Familienstand",
 
     // registrierung.html
     registration_title: "Registrierung",
@@ -128,6 +129,7 @@ const translations = {
     no: "No",
     submit: "Submit",
     back: "Back",
+    familyStatus: "Family Status",
 
     // registrierung.html
     registration_title: "Registration Form",
