@@ -191,7 +191,7 @@
           <input type="text" placeholder="Erika Musterfrau" name="kontakt_betreuer" pattern="[A-Za-z]+"
             data-i18n-placeholder="betreuer_ph" />
         </div>
-        <div class="classKontaktJugendlich">
+        <div class="classContactYouth">
           <div>
             <p data-i18n="guardian">Erziehungsberechtiger</p>
             <input type="radio" name="kontakt" value="father" />
@@ -327,7 +327,7 @@
   </script>
   <script>
     const birthdayInput = document.getElementById("birthday");
-    const kontaktDiv = document.querySelector(".KontaktJugendlich");
+    const kontaktDiv = document.querySelector(".classContactYouth");
     birthdayInput.addEventListener("change", function () {
       const birthday = new Date(this.value.split("-").reverse().join("-"));
       const today = new Date();
