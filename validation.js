@@ -1,22 +1,18 @@
 function calculateChecksum(svnr) {
-
   // Each position has a fixed multiplier
   var multipliers = [3, 7, 9, 0, 5, 8, 4, 2, 1, 6];
 
   var total = 0;
 
   for (var i = 0; i < multipliers.length; i++) {
-
     // Convert character to integer
     var digit = parseInt(svnr[i], 10);
-    total = total + (digit * multipliers[i]);
+    total = total + digit * multipliers[i];
   }
   return total % 11;
 }
 
-
 function isValidSvnr(svnr) {
-
   // Remove everything that is not a number
   svnr = svnr.replace(/\D/g, "");
 
@@ -30,7 +26,6 @@ function isValidSvnr(svnr) {
 
   var controlDigit = parseInt(svnr[3], 10);
 
-
   if (calculatedChecksum === controlDigit) {
     return true;
   } else {
@@ -38,17 +33,15 @@ function isValidSvnr(svnr) {
   }
 }
 
-var inputField = document.getElementById("scnr");
-var infoMessage = document.getElementById("svnrMessage");
+var inputField = document.getElementById("socialSecurityNumber");
+var infoMessage = document.getElementById("socialSecurityNumberMessage");
 
 if (inputField && infoMessage) {
   inputField.addEventListener("input", function () {
-
     if (isValidSvnr(inputField.value)) {
       infoMessage.style.display = "block";
     } else {
       infoMessage.style.display = "none";
     }
-
   });
 }

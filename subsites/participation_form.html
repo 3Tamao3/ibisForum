@@ -19,7 +19,7 @@
         <button class="class-btn-liquid liquid" type="button" id="btnEN">EN</button>
       </div>
     </div>
-    <h1 data-i18n="checkin_title">Teilnahmebogen/Check-In</h1>
+    <h1 data-i18n="checkin_title"></h1>
     <form action="../connect.php" method="post" enctype="multipart/form-data">
       <div>
         <label data-i18n="admin_note"> </label>
@@ -29,7 +29,7 @@
         <label for="teachingFormID" data-i18n="choose_teaching_form"> </label>
         <br />
         <select required name="teachingForm" id="teachingFormID">
-          <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
+          <option value="" disabled selected data-i18n="choose"></option>
           <option value="UEBN1">ÜBN1</option>
           <option value="UEBN2">ÜBN2</option>
           <option value="UEBV">ÜBV</option>
@@ -41,33 +41,17 @@
         <label for="apprenticeship" data-i18n="choose_apprenticeship"> </label>
         <br />
         <select required name="apprenticeship" id="apprenticeshipID">
-          <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
+          <option value="" disabled selected data-i18n="choose"></option>
           <option value="applikationsentwickler - coding" data-i18n="job_appdev">
-            Applikationsentwickler - Coding
-          </option>
           <option value="buerokaufleute" data-i18n="job_office">
-            Bürokaufleute
-          </option>
           <option value="drogisten" data-i18n="job_drugstore">
-            Drogisten
-          </option>
           <option value="einzelhandel" data-i18n="job_retail">
-            Einzelhandel
-          </option>
           <option value="betriebslogistik" data-i18n="job_logistics">
-            Betriebslogistik
-          </option>
           <option value="immobilienkaufleute" data-i18n="job_realestate">
-            Immobilienkaufleute
-          </option>
           <option value="informationstechnologie - betriebstechnik" data-i18n="job_it_ops">
-            Informationstechnologie - Betriebstechnik
-          </option>
           <option value="speitinskaufleute" data-i18n="job_forwarding">
-            Speditionskaufleute
-          </option>
           <option value="kosmetik" data-i18n="job_cosmetics">Kosmetik</option>
-          <option value="pka" data-i18n="job_pka">PKA</option>
+          <option value="pka" data-i18n="job_pka">
         </select>
       </div>
       <br />
@@ -80,31 +64,31 @@
       </div>
       <br />
       <div>
-        <p data-i18n="vocational_school">Berufschule</p>
+        <p data-i18n="vocational_school"></p>
         <input required type="radio" id="vocationalSchoolOngoing" name="vocationalSchool" value="ongoing" />
-        <label for="vocationalSchoolOngoing" data-i18n="vocational_school_ongoing">laufend</label><br />
+        <label for="vocationalSchoolOngoing" data-i18n="vocational_school_ongoing"></label><br />
         <input required type="radio" id="vocationalSchoolNo" name="vocationalSchool" value="no" />
-        <label for="vocationalSchoolNo" data-i18n="no">Nein</label><br />
+        <label for="vocationalSchoolNo" data-i18n="no"></label><br />
       </div>
       <br />
       <div>
         <p data-i18n="gender"></p>
         <input required type="radio" id="genderMale" name="gender" value="male" />
-        <label for="genderMale" data-i18n="male">Männlich</label><br />
+        <label for="genderMale" data-i18n="male"></label><br />
         <input required type="radio" id="genderFemale" name="gender" value="female" />
-        <label for="genderFemale" data-i18n="female">Weiblich</label><br />
+        <label for="genderFemale" data-i18n="female"></label><br />
         <input required type="radio" id="genderDiverse" name="gender" value="diverse" />
-        <label for="genderDiverse" data-i18n="diverse">Divers</label><br />
+        <label for="genderDiverse" data-i18n="diverse"></label><br />
       </div>
       <br />
       <div class="classSameLine">
         <div>
-          <label data-i18n="firstname">Vorname:</label><br />
+          <label data-i18n="firstname"></label><br />
           <input required type="text" placeholder="Max" id="firstName" name="firstName" pattern="[A-Za-z]+"
             data-i18n-placeholder="firstname_ph" />
         </div>
         <div>
-          <label data-i18n="lastname">Nachname:</label><br />
+          <label data-i18n="lastname"></label><br />
           <input required type="text" placeholder="Mustermann" id="lastName" name="lastName" pattern="[A-Za-z]+"
             data-i18n-placeholder="lastname_ph" />
         </div>
@@ -112,7 +96,7 @@
       <div>
         <label data-i18n="familyStatus"></label><br />
         <select required class="classProviderDropdown" name="provider" data-i18n-placeholder="provider_ph">
-          <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
+          <option value="" disabled selected data-i18n="choose"></option>
           <option value="Sprungbrett">Ledig</option>
           <option value="ABO_Jugend">ABO Verheiratet</option>
           <option value="BFI">Geschieden</option>
@@ -274,39 +258,37 @@
           <option value="BHS">BHS</option>
           <option value="BS">BS</option>
           <option value="Pflichtschule" data-i18n="school_compulsory">
-            Pflichtschule
-          </option>
         </select>
       </div>
       <br />
       <div>
-        <label data-i18n="note">Ihre Notize:</label><br />
+        <label data-i18n="note"></label><br />
         <textarea rows="4" cols="50" class="classNoteText" type="textarea"
           placeholder="Hier können Sie Ihre Notizen eingeben." id="textarea" name="note"
           pattern="^[A-Za-z0-9\s.,!?'-]{0,250}$" data-i18n-placeholder="note_ph"></textarea>
       </div>
       <div>
-        <label data-i18n="registration_form">Meldezettel (JPEG/JPG, PNG oder PDF)</label><br />
+        <label data-i18n="registration_form"></label><br />
         <input required type="file" id="registrationForm" name="registrationForm" />
       </div>
       <div>
-        <label data-i18n="birth_cert">Geburtsurkunde (JPEG/JPG, PNG oder PDF)</label><br />
+        <label data-i18n="birth_cert"></label><br />
         <input required type="file" id="birthCert" name="birthCert" />
       </div>
       <div>
-        <label data-i18n="citizenship">Staatsbürgerschaftsnachweis (JPEG/JPG, PNG oder PDF)</label><br />
+        <label data-i18n="citizenship"></label><br />
         <input required type="file" id="citizenship" name="citizenship" />
       </div>
       <div>
-        <label data-i18n="bank_card">Kontokarte (JPEG/JPG, PNG oder PDF)</label><br />
+        <label data-i18n="bank_card"></label><br />
         <input required type="file" id="bankCard" name="bankCard" />
       </div>
       <div>
-        <label data-i18n="ecard">E-Card (JPEG/JPG, PNG oder PDF)</label><br />
+        <label data-i18n="ecard"></label><br />
         <input required type="file" id="ecard" name="ecard" />
       </div>
       <div>
-        <label data-i18n="residence">Aufenthaltstitel (JPEG/JPG, PNG oder PDF)</label><br />
+        <label data-i18n="residence"></label><br />
         <input type="file" id="residence" name="residence" />
       </div>
       <button class="class-btn-liquid liquid" type="submit" data-i18n="submit">
@@ -322,7 +304,7 @@
     <br />
     <script src="../i18n.js"></script>
   </div>
-  <script src="../validierung.js"></script>
+  <script src="../validation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script>
     flatpickr("#birthday", {
