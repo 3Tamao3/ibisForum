@@ -1,6 +1,7 @@
 const translations = {
   de: {
     // index page
+    page_title_index: "ibis acam - Formular",
     choose_form: "Bitte Formular auswählen",
     career_check: "Berufs-Check",
     checkin: "Teilnahmebogen / Check In",
@@ -20,6 +21,7 @@ const translations = {
     choose: "Bitte auswählen",
 
     // registrierung.html
+    page_title_registry: "ibis acam - Registrierung",
     registration_title: "Registrierung",
     provider: "Träger:",
     career_check_question: "Berufs-Check",
@@ -65,6 +67,7 @@ const translations = {
     note: "Ihre Notizen: (Optional)",
 
     // teilnahmebogen.html
+    page_title_checkin: "ibis acam - Teilnahmebogen",
     contact: "Kontaktperson",
     guardian: "Erziehungsberechtigte/r:",
     father: "Vater:",
@@ -113,6 +116,7 @@ const translations = {
     date_ph: "TT.MM.JJJJ",
 
     // success page
+    page_title: "ibis acam - Erfolgreich",
     success_title: "Erfolgreich abgeschickt!",
     success_text:
       "Danke! Ihre Daten wurden gespeichert. Falls nötig, melden wir uns bei Ihnen.",
@@ -122,6 +126,7 @@ const translations = {
 
   en: {
     // index page
+    page_title_index: "ibis acam - Form",
     choose_form: "Please choose a form",
     career_check: "Career Check",
     checkin: "Registration / Check In",
@@ -141,6 +146,7 @@ const translations = {
     choose: "Please choose",
 
     // registrierung.html
+    page_title_registry: "ibis acam - Registration",
     registration_title: "Registration Form",
     provider: "Provider:",
     career_check_question: "Career Check",
@@ -148,6 +154,7 @@ const translations = {
       "The provider is the organization that runs the course or program, for example the employment service or a training institute.",
 
     // teilnahmebogen.html
+    page_title_checkin: "ibis acam - Check-In",
     checkin_title: "Registration / Check-In",
     admin_note:
       "Please fill in the next four fields only in the presence of an administrator.",
@@ -233,6 +240,7 @@ const translations = {
     date_ph: "DD.MM.YYYY",
 
     // success page
+    page_title_success: "ibis acam - Success",
     success_title: "Successfully submitted!",
     success_text:
       "Thanks! Your data has been saved. If needed, we will contact you.",
