@@ -2,13 +2,13 @@ const translations = {
   de: {
     // index page
     choose_form: "Bitte Formular auswählen",
-    career_check_button: "Berufs-Check",
+    career_check: "Berufs-Check",
     checkin: "Teilnahmebogen / Check In",
 
     // multiple pages
     lastname: "Nachname:",
     firstname: "Vorname:",
-    socialSecurityNumber: "Sozialversicherungsnummer",
+    social_security_number: "Sozialversicherungsnummer",
     phone: "Telefonnummer:",
     email: "E-Mail:",
     appointments: "Termine:",
@@ -16,7 +16,7 @@ const translations = {
     no: "Nein",
     submit: "Absenden",
     back: "Zurück",
-    familyStatus: "Familienstand",
+    family_status: "Familienstand",
     choose: "Bitte auswählen",
 
     // registrierung.html
@@ -43,7 +43,7 @@ const translations = {
     female: "Weiblich",
     diverse: "Divers",
 
-    socialSecurityNumber_text: "Die SVNr ist korrekt!",
+    social_security_number_text: "Die SVNr ist korrekt!",
 
     birthday: "Geburtstag",
     birth_country: "Geburtsland",
@@ -96,7 +96,7 @@ const translations = {
     // placeholders
     lastname_ph: "Mustermann",
     firstname_ph: "Max",
-    socialSecurityNumber_ph: "1234 010180",
+    social_security_number_ph: "1234 010180",
     birthday_ph: "TT.MM.JJJJ",
     birth_country_ph: "Österreich",
     birth_city_ph: "Wien",
@@ -123,13 +123,13 @@ const translations = {
   en: {
     // index page
     choose_form: "Please choose a form",
-    career_check_button: "Career Check",
+    career_check: "Career Check",
     checkin: "Registration / Check In",
 
     // multiple pages (shared)
     lastname: "Last name:",
     firstname: "First name:",
-    socialSecurityNumber: "Social Security Number:",
+    social_security_number: "Social Security Number:",
     phone: "Phone number:",
     email: "E-Mail:",
     appointments: "Appointments:",
@@ -163,7 +163,7 @@ const translations = {
     female: "Female",
     diverse: "Diverse",
 
-    socialSecurityNumber_text: "The SSN is correct!",
+    social_security_number_text: "The SSN is correct!",
 
     birthday: "Date of birth",
     birth_country: "Country of birth",
@@ -216,7 +216,7 @@ const translations = {
     // placeholders
     lastname_ph: "Doe",
     firstname_ph: "John",
-    socialSecurityNumber_ph: "1234 010180",
+    social_security_number_ph: "1234 010180",
     birthday_ph: "DD.MM.YYYY",
     birth_country_ph: "Austria",
     birth_city_ph: "Vienna",
