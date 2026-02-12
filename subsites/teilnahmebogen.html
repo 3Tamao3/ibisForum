@@ -11,12 +11,12 @@
 </head>
 
 <body>
-  <div class="centerBox">
-    <div class="topRow">
+  <div class="classCenterBox">
+    <div class="classTopRow">
       <img src="../imgs/images.png" alt="ibis acam Logo" />
-      <div class="spracheButtons">
-        <button class="btn-liquid liquid" type="button" id="btnDE">DE</button>
-        <button class="btn-liquid liquid" type="button" id="btnEN">EN</button>
+      <div class="classSpracheButtons">
+        <button class="class-btn-liquid liquid" type="button" id="btnDE">DE</button>
+        <button class="class-btn-liquid liquid" type="button" id="btnEN">EN</button>
       </div>
     </div>
     <h1 data-i18n="checkin_title">Teilnahmebogen/Check-In</h1>
@@ -97,7 +97,7 @@
         <label for="diverse" data-i18n="diverse">Divers</label><br />
       </div>
       <br />
-      <div class="sameLine">
+      <div class="classSameLine">
         <div>
           <label data-i18n="firstname">Vorname:</label><br />
           <input required type="text" placeholder="Max" id="firstName" name="firstName" pattern="[A-Za-z]+"
@@ -111,7 +111,7 @@
       </div>
       <div>
         <label data-i18n="familyStatus"></label><br />
-        <select required class="providerDropdown" name="provider" data-i18n-placeholder="provider_ph">
+        <select required class="classProviderDropdown" name="provider" data-i18n-placeholder="provider_ph">
           <option value="" disabled selected>Bitte auswählen</option>
           <option value="Sprungbrett">Ledig</option>
           <option value="ABO_Jugend">ABO Verheiratet</option>
@@ -146,7 +146,7 @@
         <input required type="text" placeholder="Hauptstraße" id="street" name="street" pattern="[A-Za-z]+"
           data-i18n-placeholder="street_ph" />
       </div>
-      <div class="sameLine">
+      <div class="classSameLine">
         <div>
           <label data-i18n="house_number">Hausnummer</label>
           <input required placeholder="4" type="text" id="houseNumber" name="houseNumber" pattern="[A-Za-z0-9]+" />
@@ -160,7 +160,7 @@
           <input required placeholder="15" type="text" id="door" name="door" pattern="[A-Za-z0-9]+" />
         </div>
       </div>
-      <div class="sameLine">
+      <div class="classSameLine">
         <div>
           <label data-i18n="zip">PLZ</label><br />
           <input required type="text" placeholder="1234" id="zip" name="zip" data-i18n-placeholder="zip_ph"
@@ -182,7 +182,7 @@
         <input required type="email" placeholder="beispiel@domain.com" id="email" name="email"
           pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" data-i18n-placeholder="email_ph" />
       </div>
-      <div class="contactBox">
+      <div class="classContactBox">
         <label data-i18n="contact"><b></b></label>
 
         <div>
@@ -191,7 +191,7 @@
           <input type="text" placeholder="Erika Musterfrau" name="kontakt_betreuer" pattern="[A-Za-z]+"
             data-i18n-placeholder="betreuer_ph" />
         </div>
-        <div class="KontaktJugendlich">
+        <div class="classKontaktJugendlich">
           <div>
             <p data-i18n="guardian">Erziehungsberechtiger</p>
             <input type="radio" name="kontakt" value="father" />
@@ -202,7 +202,7 @@
             <label for="other" data-i18n="other">sonstiges</label><br />
           </div>
         </div>
-        <div class="sameLine">
+        <div class="classSameLine">
           <div>
             <label data-i18n="firstname">Vorname</label>
             <input required type="text" placeholder="Max" name="kontakt_vorname" data-i18n-placeholder="vorname_ph"
@@ -219,7 +219,7 @@
           <input required type="text" placeholder="Hauptstraße" name="kontakt_straße" pattern="[A-Za-z]+"
             data-i18n-placeholder="straße_ph" />
         </div>
-        <div class="sameLine">
+        <div class="classSameLine">
           <div>
             <label data-i18n="house_number">Hausnr.</label>
             <input required type="text" placeholder="6" name="kontakt_houseNumber" pattern="[A-Za-z0-9]+"
@@ -236,7 +236,7 @@
               pattern="[A-Za-z0-9]+" />
           </div>
         </div>
-        <div class="sameLine">
+        <div class="classSameLine">
           <div>
             <label data-i18n="zip">PLZ</label>
             <input required type="text" placeholder="1234" name="kontakt_plz" data-i18n-placeholder="zip_ph"
@@ -248,7 +248,7 @@
               pattern="[A-Za-z]+" />
           </div>
         </div>
-        <div class="sameLine">
+        <div class="classSameLine">
           <div>
             <label data-i18n="phone">Telefonnummer:</label><br />
             <input required type="tel" placeholder="+43 1234567890" id="kontakt_phone" name="kontakt_phone"
@@ -275,7 +275,7 @@
       <br />
       <div>
         <label data-i18n="note">Ihre Notize:</label><br />
-        <textarea rows="4" cols="50" class="noteText" type="textarea"
+        <textarea rows="4" cols="50" class="classNoteText" type="textarea"
           placeholder="Hier können Sie Ihre Notizen eingeben." id="textarea" name="notize"
           pattern="^[A-Za-z0-9\s.,!?'-]{0,250}$" data-i18n-placeholder="note_ph"></textarea>
       </div>
@@ -303,11 +303,11 @@
         <label data-i18n="residence">Aufenthaltstitel (JPEG/JPG, PNG oder PDF)</label><br />
         <input type="file" id="residence" name="residence" />
       </div>
-      <button class="btn-liquid liquid" type="submit" data-i18n="submit">
+      <button class="class-btn-liquid liquid" type="submit" data-i18n="submit">
         Absenden
       </button>
       <a href="../index.html">
-        <button class="btn-liquid liquid" type="button" data-i18n="back">
+        <button class="class-btn-liquid liquid" type="button" data-i18n="back">
           Zurück
         </button>
       </a>

@@ -11,17 +11,17 @@
 </head>
 
 <body>
-  <div class="centerBox">
-    <div class="topRow">
+  <div class="classCenterBox">
+    <div class="classTopRow">
       <img src="../imgs/images.png" alt="ibis acam Logo" />
-      <div class="spracheButtons">
-        <button type="button" class="btn-liquid liquid" id="btnDE">DE</button>
-        <button type="button" class="btn-liquid liquid" id="btnEN">EN</button>
+      <div class="classSpracheButtons">
+        <button type="button" class="class-btn-liquid liquid" id="btnDE">DE</button>
+        <button type="button" class="class-btn-liquid liquid" id="btnEN">EN</button>
       </div>
     </div>
     <h1 data-i18n="registration_title"></h1>
     <form action="../connect.php" method="post" enctype="multipart/form-data">
-      <div class="sameLine">
+      <div class="classSameLine">
         <div>
           <label data-i18n="lastname"></label><br />
           <input required type="text" id="lastName" name="lastName" pattern="[A-Za-z]+"
@@ -35,7 +35,7 @@
       </div>
       <div>
         <label data-i18n="familyStatus"></label><br />
-        <select required class="providerDropdown" name="provider" data-i18n-placeholder="provider_ph">
+        <select required class="classProviderDropdown" name="provider" data-i18n-placeholder="provider_ph">
           <option value="" disabled selected>Bitte auswählen</option>
           <option value="Sprungbrett">Ledig</option>
           <option value="ABO_Jugend">ABO Verheiratet</option>
@@ -54,11 +54,11 @@
       <div>
         <label>
           <span data-i18n="provider"></span>
-          <span class="info-icon" data-i18n-title="provider_info" title="" aria-label="Info">
+          <span class="classInfo-icon" data-i18n-title="provider_info" title="" aria-label="Info">
             🛈
           </span> </label><br />
 
-        <select required class="providerDropdown" name="provider_select" id="provider_select"
+        <select required class="classProviderDropdown" name="provider_select" id="provider_select"
           onchange="checkSonstigeProvider()">
           <option value="" disabled selected>Bitte auswählen</option>
 
@@ -134,9 +134,9 @@
           <input required type="text" id="appointment" name="appointment" placeholder="DD-MM-YYYY" />
         </div>
       </div>
-      <button type="submit" class="btn-liquid liquid" data-i18n="submit"></button>
+      <button type="submit" class="class-btn-liquid liquid" data-i18n="submit"></button>
       <a href="../index.html">
-        <button type="button" class="btn-liquid liquid" data-i18n="back"></button>
+        <button type="button" class="class-btn-liquid liquid" data-i18n="back"></button>
       </a>
     </form>
   </div>

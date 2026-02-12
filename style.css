@@ -1,4 +1,4 @@
-.centerBox {
+.classCenterBox {
   border: 2px solid lightgray;
   max-width: 720px;
   margin: 75px auto;
@@ -7,22 +7,22 @@
   text-align: center;
 }
 
-.topRow {
+.classTopRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.centerBox img {
+.classCenterBox img {
   width: 100px;
 }
 
-.spracheButtons {
+.classSpracheButtons {
   display: flex;
   gap: 10px;
 }
 
-.spracheButtons button {
+.classSpracheButtons button {
   width: 50px;
   height: 45px;
   padding: 0;
@@ -32,21 +32,21 @@ h1 {
   clear: both;
 }
 
-.centerBox label {
+.classCenterBox label {
   font-size: 18px;
 }
 
-.centerBox p {
+.classCenterBox p {
   font-size: 18px;
   text-align: left;
   margin: 1px 0px 12px;
 }
 
-.centerBox input[type="text"],
-.centerBox input[type="email"],
-.centerBox input[type="tel"],
-.centerBox input[type="date"],
-.centerBox input[type="file"] {
+.classCenterBox input[type="text"],
+.classCenterBox input[type="email"],
+.classCenterBox input[type="tel"],
+.classCenterBox input[type="date"],
+.classCenterBox input[type="file"] {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
@@ -56,29 +56,29 @@ h1 {
   margin-bottom: 18px;
 }
 
-.hidden {
+.classHidden {
   display: none;
 }
 
-.genderSection {
+.classGenderSection {
   text-align: left;
   margin-bottom: 15px;
   padding: 10px;
 }
 
-.genderSection label {
+.classGenderSection label {
   display: inline-flex;
   align-items: center;
   gap: 8px;
   margin-right: 15px;
 }
 
-.radioSelect {
+.classRadioSelect {
   transform: scale(1.2);
 }
 
-.centerBox button,
-.centerBox input[type="submit"] {
+.classCenterBox button,
+.classCenterBox input[type="submit"] {
   width: 100%;
   max-width: 600px;
   padding: 12px;
@@ -94,7 +94,7 @@ div {
   text-align: left;
 }
 
-.noteText {
+.classNoteText {
   width: 100%;
   height: 100px;
   box-sizing: border-box;
@@ -119,50 +119,50 @@ select {
   background-color: #fff;
 }
 
-.sameLine {
+.classSameLine {
   display: flex;
   gap: 10px;
   margin-top: 10px;
 }
 
-.sameLine div {
+.classSameLine div {
   flex: 1;
 }
 
-.contactBox {
+.classContactBox {
   border: #000;
   border: 2px solid;
   padding: 10px;
   border-radius: 6px;
 }
 
-.KontaktJugendlich {
+.classKontaktJugendlich {
   display: none;
 }
 
-.providerDropdown{
+.classProviderDropdown{
   width: 400px;
   height: 35px;
 }
 
-.providerElse {
+.classProviderElse {
   display: none;
   margin-bottom: 15px;
 }
 
-.info-icon {
+.classInfo-icon {
   cursor: help;
   font-size: 18px;
   color: rgb(0, 30, 164);
   margin-left: 5px;
 }
 
-.info-icon:hover {
+.classInfo-icon:hover {
   transition: color 0.3s;
   color: rgb(63, 134, 201);
 }
 
-.btn-liquid.liquid {
+.class-btn-liquid.liquid {
   background: linear-gradient(rgba(0, 85, 164) 0 0) no-repeat
     calc(200% - var(--p, 0%)) 100% / 200% var(--p, 0.2em);
   transition:
@@ -170,7 +170,7 @@ select {
     background-position 0.1s calc(0.1s - var(--t, 0s));
 }
 
-.btn-liquid.liquid:hover {
+.class-btn-liquid.liquid:hover {
   --p: 100%;
   --t: 0.3s;
   color: rgb(255, 255, 255);
