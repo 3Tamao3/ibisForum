@@ -193,12 +193,13 @@ select:user-invalid {
   border: 2.5px solid red !important;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  accent-color: blue;
+input[type="radio"]
+{
+  accent-color: black;
   transform: scale(1.2);
 }
 
-input:user-valid {
+input:user-valid,
+textarea:user-valid{
   border: 2.5px solid rgb(32, 213, 32) !important;
 }
