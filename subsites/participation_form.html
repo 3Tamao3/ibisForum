@@ -42,16 +42,16 @@
         <br />
         <select required name="apprenticeship" id="apprenticeshipID">
           <option value="" disabled selected data-i18n="choose"></option>
-          <option value="applikationsentwickler - coding" data-i18n="job_appdev">
-          <option value="buerokaufleute" data-i18n="job_office">
-          <option value="drogisten" data-i18n="job_drugstore">
-          <option value="einzelhandel" data-i18n="job_retail">
-          <option value="betriebslogistik" data-i18n="job_logistics">
-          <option value="immobilienkaufleute" data-i18n="job_realestate">
-          <option value="informationstechnologie - betriebstechnik" data-i18n="job_it_ops">
-          <option value="speitinskaufleute" data-i18n="job_forwarding">
-          <option value="kosmetik" data-i18n="job_cosmetics">Kosmetik</option>
-          <option value="pka" data-i18n="job_pka">
+          <option value="Application_Developer" data-i18n="job_appdev">
+          <option value="Office_Administration" data-i18n="job_office">
+          <option value="Drugstore_Specialist" data-i18n="job_drugstore">
+          <option value="Retail" data-i18n="job_retail">
+          <option value="Warehouse_Logistics" data-i18n="job_logistics">
+          <option value="Real_Estate_Management" data-i18n="job_realestate">
+          <option value="Information_Technology" data-i18n="job_it_ops">
+          <option value="Freight_Forwarding" data-i18n="job_forwarding">
+          <option value="Cosmetics" data-i18n="job_cosmetics">
+          <option value="PKA" data-i18n="job_pka">
         </select>
       </div>
       <br />
@@ -89,72 +89,71 @@
         </div>
         <div>
           <label data-i18n="lastname"></label><br />
-          <input required type="text" placeholder="Mustermann" id="lastName" name="lastName" pattern="[A-Za-z]+"
+          <input required type="text" id="lastName" name="lastName" pattern="[A-Za-z]+"
             data-i18n-placeholder="lastname_ph" />
         </div>
       </div>
       <div>
-        <label data-i18n="familyStatus"></label><br />
-        <select required class="classProviderDropdown" name="provider" data-i18n-placeholder="provider_ph">
-          <option value="" disabled selected data-i18n="choose"></option>
-          <option value="Sprungbrett">Ledig</option>
-          <option value="ABO_Jugend">ABO Verheiratet</option>
-          <option value="BFI">Geschieden</option>
-          <option value="AMS">verwitwet</option>
+        <label data-i18n="family_status"></label><br />
+        <select required class="classProviderDropdown" name="familyStatus">
+          <option disabled selected data-i18n="choose"></option>
+          <option value="single" data-i18n="family_status_single"></option>
+          <option value="married" data-i18n="family_status_married"></option>
+          <option value="divorced" data-i18n="family_status_divorced"></option>
+          <option value="widowed" data-i18n="family_status_widowed"></option>
+          <option value="registeredPartnership" data-i18n="family_staus_registered"></option>
         </select>
       </div>
       <br>
       <div>
-        <label data-i18n="social_security_number">SVNr.</label><br />
+        <label data-i18n="social_security_number"></label><br />
         <input required type="text" placeholder="1234 567890" id="socialSecurityNumber" name="socialSecurityNumber"
           pattern="[0-9]{10}" />
         <p data-i18n="social_security_number_text" id="socialSecurityNumberMessage"
           style="color: rgb(7, 229, 7); display: none" name="socialSecurityNumberMessage">
-          SVNr ist korrekt!
-        </p>
       </div>
       <div>
-        <label data-i18n="birthday">Geburtstag</label><br />
+        <label data-i18n="birthday"></label><br />
         <input required type="text" id="birthday" name="birthday" data-i18n-placeholder="birthday_ph" />
       </div>
       <div>
-        <label data-i18n="birth_country">Geburtsland</label><br />
+        <label data-i18n="birth_country"></label><br />
         <input required type="text" placeholder="Österreich" id="birthCountry" name="birthCountry" pattern="[A-Za-z]+"
           data-i18n-placeholder="birth_country_ph" />
       </div>
       <div>
-        <label data-i18n="birth_city">Geburtsort</label><br />
+        <label data-i18n="birth_city"></label><br />
         <input required type="text" placeholder="Wien" id="birthCity" name="birthCity" pattern="[A-Za-z]+"
           data-i18n-placeholder="birth_city_ph" />
       </div>
       <div class="classContactBox">
         <div>
-          <label data-i18n="street">Straße</label><br />
+          <label data-i18n="street"></label><br />
           <input required type="text" placeholder="Hauptstraße" id="street" name="street" pattern="[A-Za-z]+"
             data-i18n-placeholder="street_ph" />
         </div>
         <div class="classSameLine">
           <div>
-            <label data-i18n="house_number">Hausnummer</label>
+            <label data-i18n="house_number"></label>
             <input required placeholder="4" type="text" id="houseNumber" name="houseNumber" pattern="[A-Za-z0-9]+" />
           </div>
           <div>
-            <label data-i18n="staircase">Stiege</label>
+            <label data-i18n="staircase"></label>
             <input required placeholder="3" type="text" id="staircase" name="staircase" pattern="[A-Za-z0-9]+" />
           </div>
           <div>
-            <label data-i18n="door">Tür</label>
+            <label data-i18n="door"></label>
             <input required placeholder="15" type="text" id="door" name="door" pattern="[A-Za-z0-9]+" />
           </div>
         </div>
         <div class="classSameLine">
           <div>
-            <label data-i18n="zip">PLZ</label><br />
+            <label data-i18n="zip"></label><br />
             <input required type="text" placeholder="1234" id="zip" name="zip" data-i18n-placeholder="zip_ph"
               pattern="[0-9]{3,5}" />
           </div>
           <div>
-            <label data-i18n="city">Ort</label><br />
+            <label data-i18n="city"></label><br />
             <input required type="text" placeholder="Wien" id="city" name="city" data-i18n-placeholder="city_ph"
               pattern="[A-Za-z]+" />
           </div>
@@ -162,12 +161,12 @@
       </div>
       <br>
       <div>
-        <label data-i18n="phone">Telefonnummer:</label><br />
+        <label data-i18n="phone"></label><br />
         <input required type="tel" placeholder="+43 1234567890" id="phone" name="phone" pattern="\+?[0-9\s\-]+"
           data-i18n-placeholder="phone_ph" />
       </div>
       <div>
-        <label data-i18n="email">E-Mail:</label><br />
+        <label data-i18n="email"></label><br />
         <input required type="email" placeholder="beispiel@domain.com" id="email" name="email"
           pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" data-i18n-placeholder="email_ph" />
       </div>
@@ -176,19 +175,19 @@
 
         <div>
           <br />
-          <label data-i18n="advicer">Betruer_In etc.</label>
+          <label data-i18n="advicer"></label>
           <input type="text" placeholder="Erika Musterfrau" name="contactAdvicer" pattern="[A-Za-z]+"
             data-i18n-placeholder="advicer_ph" />
         </div>
         <div class="classContactYouth">
           <div>
-            <p data-i18n="guardian">Erziehungsberechtiger</p>
+            <p data-i18n="guardian"></p>
             <input type="radio" name="contact" value="father" />
-            <label for="father" data-i18n="father">Vater</label><br />
+            <label for="father" data-i18n="father"></label><br />
             <input type="radio" name="contact" value="mother" />
-            <label for="mother" data-i18n="mother">Mutter</label><br />
+            <label for="mother" data-i18n="mother"></label><br />
             <input type="radio" name="contact" value="other" />
-            <label for="other" data-i18n="other">sonstiges</label><br />
+            <label for="other" data-i18n="other"></label><br />
           </div>
         </div>
         <div class="classSameLine">

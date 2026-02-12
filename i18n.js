@@ -143,8 +143,8 @@ const translations = {
     no: "No",
     submit: "Submit",
     back: "Back",
-    familyStatus: "Family Status",
     choose: "Please choose",
+    family_status: "Family Status:",
 
     // registrierung.html
     page_title_registry: "ibis acam - Registration",
