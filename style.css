@@ -140,7 +140,7 @@ select {
   display: none;
 }
 
-.classProviderDropdown{
+.classProviderDropdown {
   width: 400px;
   height: 35px;
 }
@@ -176,12 +176,12 @@ select {
   color: rgb(255, 255, 255);
 }
 
-input{
+input {
   border: 2.5px solid black !important;
 }
 
-input:user-invalid{
-border: 2.5px solid red !important; 
+input:user-invalid {
+  border: 2.5px solid red !important;
 }
 
 input:user-valid {

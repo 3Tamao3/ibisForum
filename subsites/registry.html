@@ -35,8 +35,8 @@
       </div>
       <div>
         <label data-i18n="family_status"></label><br />
-        <select required class="classProviderDropdown" name="provider" data-i18n-placeholder="provider_ph">
-          <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
+        <select required class="classProviderDropdown" name="familyStatus">
+          <option disabled selected data-i18n="choose"></option>
           <option value="single" data-i18n="family_status_single"></option>
           <option value="married" data-i18n="family_status_married"></option>
           <option value="divorced" data-i18n="family_status_divorced"></option>
@@ -50,10 +50,8 @@
         <input required type="text" id="socialSecurityNumber" name="socialSecurityNumber" pattern="[0-9]{10}"
           data-i18n-placeholder="social_security_number_ph" /><br />
       </div>
-      <p data-i18n="social_security_number_text" id="social_security_number_message"
+      <p data-i18n="social_security_number_text" id="socialSecurityNumberMessage"
         style="color: rgb(7, 173, 7); display: none">
-        SVNr ist korrekt!
-      </p>
       <div>
         <label>
           <span data-i18n="provider"></span>
@@ -63,7 +61,7 @@
 
         <select required class="classProviderDropdown" name="provider_select" id="provider_select"
           onchange="checkSonstigeProvider()">
-          <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
+          <option value="" disabled selected data-i18n="choose"></option>
 
           <option value="AMS">AMS</option>
           <option value="BFI">BFI</option>
@@ -107,7 +105,7 @@
         </select>
         <br><br>
         <div>
-          <input type="text" id="provider_sonstige" name="provider_sonstige" placeholder="Bitte Sonstige angeben"
+          <input type="text" id="provider_sonstige" name="provider_sonstige" data-i18n-placeholder="provider_else_ph"
             style="display:none;" />
 
         </div>
@@ -115,9 +113,9 @@
 
       <div>
         <p data-i18n="career_check_question"></p>
-        <input type="radio" id="career_yes" name="career" value="yes" />
+        <input type="radio" id="career_yes" name="career" value="career_yes" />
         <label for="career_yes" data-i18n="yes"></label><br />
-        <input type="radio" id="career_no" name="career" value="no" />
+        <input type="radio" id="career_no" name="career" value="career_no" />
         <label for="career_no" data-i18n="no"></label><br />
       </div>
       <br />
@@ -180,7 +178,7 @@
     if (careerNo) careerNo.addEventListener("change", updateCareerFields);
   </script>
 
-  <script src="../validierung.js"></script>
+  <script src="../validation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script>
     flatpickr("#appointment", {

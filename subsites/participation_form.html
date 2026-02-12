@@ -212,7 +212,7 @@
           <div>
             <label data-i18n="house_number">Hausnr.</label>
             <input required type="text" placeholder="6" name="contactHouseNumber" pattern="[A-Za-z0-9]+"
-              data-i18n-placeholder="houseNumber_ph" />
+              data-i18n-placeholder="house_number_ph" />
           </div>
           <div>
             <label data-i18n="staircase">Stiege</label>
@@ -221,7 +221,7 @@
           </div>
           <div>
             <label data-i18n="door">Tür</label>
-            <input required type="text" placeholder="13" name="contactdoor" data-i18n-placeholder="door_ph"
+            <input required type="text" placeholder="13" name="contactDoor" data-i18n-placeholder="door_ph"
               pattern="[A-Za-z0-9]+" />
           </div>
         </div>
@@ -257,14 +257,13 @@
           <option value="AHS">AHS</option>
           <option value="BHS">BHS</option>
           <option value="BS">BS</option>
-          <option value="Pflichtschule" data-i18n="school_compulsory">
+          <option value="Compulsory_School" data-i18n="school_compulsory">
         </select>
       </div>
       <br />
       <div>
         <label data-i18n="note"></label><br />
-        <textarea rows="4" cols="50" class="classNoteText" type="textarea"
-          placeholder="Hier können Sie Ihre Notizen eingeben." id="textarea" name="note"
+        <textarea rows="4" cols="50" class="classNoteText" type="textarea" id="textarea" name="note"
           pattern="^[A-Za-z0-9\s.,!?'-]{0,250}$" data-i18n-placeholder="note_ph"></textarea>
       </div>
       <div>
@@ -292,11 +291,11 @@
         <input type="file" id="residence" name="residence" />
       </div>
       <button class="class-btn-liquid liquid" type="submit" data-i18n="submit">
-        Absenden
+
       </button>
       <a href="../index.html">
         <button class="class-btn-liquid liquid" type="button" data-i18n="back">
-          Zurück
+
         </button>
       </a>
     </form>

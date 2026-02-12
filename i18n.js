@@ -114,9 +114,10 @@ const translations = {
     provider_ph: "Sonstige",
     note_ph: "Hier können Sie Ihre Notizen eingeben.",
     date_ph: "TT.MM.JJJJ",
+    provider_else_ph: "Bitte Sonstige angeben",
 
     // success page
-    page_title: "ibis acam - Erfolgreich",
+    page_title_success: "ibis acam - Erfolgreich",
     success_title: "Erfolgreich abgeschickt!",
     success_text:
       "Danke! Ihre Daten wurden gespeichert. Falls nötig, melden wir uns bei Ihnen.",
@@ -238,6 +239,7 @@ const translations = {
     note_ph: "You can enter your notes here.",
     provider_ph: "Else",
     date_ph: "DD.MM.YYYY",
+    provider_else_ph: "Please specify if 'Else' is selected",
 
     // success page
     page_title_success: "ibis acam - Success",
