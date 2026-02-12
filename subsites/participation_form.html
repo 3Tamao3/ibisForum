@@ -26,22 +26,22 @@
       </div>
       <br />
       <div>
-        <label for="lehrform" data-i18n="choose_lehrform"> </label>
+        <label for="teachingFormID" data-i18n="choose_teaching_form"> </label>
         <br />
-        <select required name="lehrform" id="lehrform">
-          <option value="" disabled selected>Bitte auswählen</option>
-          <option value="ÜBN1">ÜBN1</option>
-          <option value="ÜBN2">ÜBN2</option>
-          <option value="ÜBV">ÜBV</option>
+        <select required name="teachingForm" id="teachingFormID">
+          <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
+          <option value="UEBN1">ÜBN1</option>
+          <option value="UEBN2">ÜBN2</option>
+          <option value="UEBV">ÜBV</option>
           <option value="TQU2">TQU2</option>
         </select>
       </div>
       <br />
       <div>
-        <label for="lehrberuf" data-i18n="choose_lehrberuf"> </label>
+        <label for="apprenticeship" data-i18n="choose_apprenticeship"> </label>
         <br />
-        <select required name="lehrberuf">
-          <option value="" disabled selected>Bitte auswählen</option>
+        <select required name="apprenticeship" id="apprenticeshipID">
+          <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
           <option value="applikationsentwickler - coding" data-i18n="job_appdev">
             Applikationsentwickler - Coding
           </option>
@@ -72,29 +72,29 @@
       </div>
       <br />
       <div>
-        <p data-i18n="vorlehrzeit"></p>
-        <input required type="radio" name="vorlehrzeit" value="value_vorlehrzeit_ja" />
-        <label for="vorlehrzeit_ja" data-i18n="vorlehrzeit_ja"></label><br />
-        <input required type="radio" name="vorlehrzeit" value="value_vorlehrzeit_nein" />
-        <label for="vorlehrzeit_nein" data-i18n="no"></label><br />
+        <p data-i18n="pre_apprenticeship_period"></p>
+        <input required type="radio" id="preApprenticeshipYes" name="preApprenticeshipPeriod" value="yes" />
+        <label for="preApprenticeshipYes" data-i18n="pre_apprenticeship_period_yes"></label><br />
+        <input required type="radio" id="preApprenticeshipNo" name="preApprenticeshipPeriod" value="no" />
+        <label for="preApprenticeshipNo" data-i18n="no"></label><br />
       </div>
       <br />
       <div>
-        <p data-i18n="berufschule">Berufschule</p>
-        <input required type="radio" name="berufschule" value="berufschule_laufend" />
-        <label for="berufschule_laufend" data-i18n="berufschule_laufend">laufend</label><br />
-        <input required type="radio" name="berufschule" value="berufschule_nein" />
-        <label for="berufschule_nein" data-i18n="no">Nein</label><br />
+        <p data-i18n="vocational_school">Berufschule</p>
+        <input required type="radio" id="vocationalSchoolOngoing" name="vocationalSchool" value="ongoing" />
+        <label for="vocationalSchoolOngoing" data-i18n="vocational_school_ongoing">laufend</label><br />
+        <input required type="radio" id="vocationalSchoolNo" name="vocationalSchool" value="no" />
+        <label for="vocationalSchoolNo" data-i18n="no">Nein</label><br />
       </div>
       <br />
       <div>
         <p data-i18n="gender"></p>
-        <input required type="radio" id="male" name="gender" value="male" />
-        <label for="male" data-i18n="male">Männlich</label><br />
-        <input required type="radio" id="female" name="gender" value="female" />
-        <label for="female" data-i18n="female">Weiblich</label><br />
-        <input required type="radio" id="diverse" name="gender" value="diverse" />
-        <label for="diverse" data-i18n="diverse">Divers</label><br />
+        <input required type="radio" id="genderMale" name="gender" value="male" />
+        <label for="genderMale" data-i18n="male">Männlich</label><br />
+        <input required type="radio" id="genderFemale" name="gender" value="female" />
+        <label for="genderFemale" data-i18n="female">Weiblich</label><br />
+        <input required type="radio" id="genderDiverse" name="gender" value="diverse" />
+        <label for="genderDiverse" data-i18n="diverse">Divers</label><br />
       </div>
       <br />
       <div class="classSameLine">
@@ -112,7 +112,7 @@
       <div>
         <label data-i18n="familyStatus"></label><br />
         <select required class="classProviderDropdown" name="provider" data-i18n-placeholder="provider_ph">
-          <option value="" disabled selected>Bitte auswählen</option>
+          <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
           <option value="Sprungbrett">Ledig</option>
           <option value="ABO_Jugend">ABO Verheiratet</option>
           <option value="BFI">Geschieden</option>
@@ -121,9 +121,11 @@
       </div>
       <br>
       <div>
-        <label data-i18n="scnr">SVNr.</label><br />
-        <input required type="text" placeholder="1234 567890" id="scnr" name="scnr" pattern="[0-9]{10}" />
-        <p data-i18n="scnr_text" id="svnrMessage" style="color: rgb(7, 229, 7); display: none" name="svnrMessage">
+        <label data-i18n="socialSecurityNumber">SVNr.</label><br />
+        <input required type="text" placeholder="1234 567890" id="socialSecurityNumber" name="socialSecurityNumber"
+          pattern="[0-9]{10}" />
+        <p data-i18n="socialSecurityNumber_text" id="socialSecurityNumberMessage"
+          style="color: rgb(7, 229, 7); display: none" name="socialSecurityNumberMessage">
           SVNr ist korrekt!
         </p>
       </div>
@@ -141,37 +143,40 @@
         <input required type="text" placeholder="Wien" id="birthCity" name="birthCity" pattern="[A-Za-z]+"
           data-i18n-placeholder="birth_city_ph" />
       </div>
-      <div>
-        <label data-i18n="street">Straße</label><br />
-        <input required type="text" placeholder="Hauptstraße" id="street" name="street" pattern="[A-Za-z]+"
-          data-i18n-placeholder="street_ph" />
+      <div class="classContactBox">
+        <div>
+          <label data-i18n="street">Straße</label><br />
+          <input required type="text" placeholder="Hauptstraße" id="street" name="street" pattern="[A-Za-z]+"
+            data-i18n-placeholder="street_ph" />
+        </div>
+        <div class="classSameLine">
+          <div>
+            <label data-i18n="house_number">Hausnummer</label>
+            <input required placeholder="4" type="text" id="houseNumber" name="houseNumber" pattern="[A-Za-z0-9]+" />
+          </div>
+          <div>
+            <label data-i18n="staircase">Stiege</label>
+            <input required placeholder="3" type="text" id="staircase" name="staircase" pattern="[A-Za-z0-9]+" />
+          </div>
+          <div>
+            <label data-i18n="door">Tür</label>
+            <input required placeholder="15" type="text" id="door" name="door" pattern="[A-Za-z0-9]+" />
+          </div>
+        </div>
+        <div class="classSameLine">
+          <div>
+            <label data-i18n="zip">PLZ</label><br />
+            <input required type="text" placeholder="1234" id="zip" name="zip" data-i18n-placeholder="zip_ph"
+              pattern="[0-9]{3,5}" />
+          </div>
+          <div>
+            <label data-i18n="city">Ort</label><br />
+            <input required type="text" placeholder="Wien" id="city" name="city" data-i18n-placeholder="city_ph"
+              pattern="[A-Za-z]+" />
+          </div>
+        </div>
       </div>
-      <div class="classSameLine">
-        <div>
-          <label data-i18n="house_number">Hausnummer</label>
-          <input required placeholder="4" type="text" id="houseNumber" name="houseNumber" pattern="[A-Za-z0-9]+" />
-        </div>
-        <div>
-          <label data-i18n="staircase">Stiege</label>
-          <input required placeholder="3" type="text" id="staircase" name="staircase" pattern="[A-Za-z0-9]+" />
-        </div>
-        <div>
-          <label data-i18n="door">Tür</label>
-          <input required placeholder="15" type="text" id="door" name="door" pattern="[A-Za-z0-9]+" />
-        </div>
-      </div>
-      <div class="classSameLine">
-        <div>
-          <label data-i18n="zip">PLZ</label><br />
-          <input required type="text" placeholder="1234" id="zip" name="zip" data-i18n-placeholder="zip_ph"
-            pattern="[0-9]{3,5}" />
-        </div>
-        <div>
-          <label data-i18n="city">Ort</label><br />
-          <input required type="text" placeholder="Wien" id="city" name="city" data-i18n-placeholder="city_ph"
-            pattern="[A-Za-z]+" />
-        </div>
-      </div>
+      <br>
       <div>
         <label data-i18n="phone">Telefonnummer:</label><br />
         <input required type="tel" placeholder="+43 1234567890" id="phone" name="phone" pattern="\+?[0-9\s\-]+"
@@ -188,80 +193,81 @@
         <div>
           <br />
           <label data-i18n="advicer">Betruer_In etc.</label>
-          <input type="text" placeholder="Erika Musterfrau" name="kontakt_betreuer" pattern="[A-Za-z]+"
-            data-i18n-placeholder="betreuer_ph" />
+          <input type="text" placeholder="Erika Musterfrau" name="contactAdvicer" pattern="[A-Za-z]+"
+            data-i18n-placeholder="advicer_ph" />
         </div>
         <div class="classContactYouth">
           <div>
             <p data-i18n="guardian">Erziehungsberechtiger</p>
-            <input type="radio" name="kontakt" value="father" />
+            <input type="radio" name="contact" value="father" />
             <label for="father" data-i18n="father">Vater</label><br />
-            <input type="radio" name="kontakt" value="mother" />
+            <input type="radio" name="contact" value="mother" />
             <label for="mother" data-i18n="mother">Mutter</label><br />
-            <input type="radio" name="kontakt" value="other" />
+            <input type="radio" name="contact" value="other" />
             <label for="other" data-i18n="other">sonstiges</label><br />
           </div>
         </div>
         <div class="classSameLine">
           <div>
             <label data-i18n="firstname">Vorname</label>
-            <input required type="text" placeholder="Max" name="kontakt_vorname" data-i18n-placeholder="vorname_ph"
+            <input required type="text" placeholder="Max" name="contactFirstName" data-i18n-placeholder="firstName_ph"
               pattern="[A-Za-z]+" />
           </div>
           <div>
             <label data-i18n="lastname">Nachname</label>
-            <input required type="text" placeholder="Mustermann" name="kontakt_nachname" pattern="[A-Za-z]+"
-              data-i18n-placeholder="nachname_ph" />
+            <input required type="text" placeholder="Mustermann" name="contactLastName" pattern="[A-Za-z]+"
+              data-i18n-placeholder="lastName_ph" />
           </div>
         </div>
         <div>
           <label data-i18n="street">Straße</label>
-          <input required type="text" placeholder="Hauptstraße" name="kontakt_straße" pattern="[A-Za-z]+"
-            data-i18n-placeholder="straße_ph" />
+          <input required type="text" placeholder="Hauptstraße" name="contactStreet" pattern="[A-Za-z]+"
+            data-i18n-placeholder="street_ph" />
         </div>
         <div class="classSameLine">
           <div>
             <label data-i18n="house_number">Hausnr.</label>
-            <input required type="text" placeholder="6" name="kontakt_houseNumber" pattern="[A-Za-z0-9]+"
+            <input required type="text" placeholder="6" name="contactHouseNumber" pattern="[A-Za-z0-9]+"
               data-i18n-placeholder="houseNumber_ph" />
           </div>
           <div>
             <label data-i18n="staircase">Stiege</label>
-            <input required type="text" placeholder="6" name="kontakt_straircase" pattern="[A-Za-z0-9]+"
+            <input required type="text" placeholder="6" name="contactStraircase" pattern="[A-Za-z0-9]+"
               data-i18n-placeholder="staircase_ph" />
           </div>
           <div>
             <label data-i18n="door">Tür</label>
-            <input required type="text" placeholder="13" name="kontakt_door" data-i18n-placeholder="door_ph"
+            <input required type="text" placeholder="13" name="contactdoor" data-i18n-placeholder="door_ph"
               pattern="[A-Za-z0-9]+" />
           </div>
         </div>
         <div class="classSameLine">
           <div>
             <label data-i18n="zip">PLZ</label>
-            <input required type="text" placeholder="1234" name="kontakt_plz" data-i18n-placeholder="zip_ph"
+            <input required type="text" placeholder="1234" name="contactZIP" data-i18n-placeholder="zip_ph"
               pattern="[0-9]{3,5}" />
           </div>
           <div>
             <label data-i18n="city">Ort</label>
-            <input required type="text" placeholder="Wien" name="kontakt_ort" data-i18n-placeholder="city_ph"
+            <input required type="text" placeholder="Wien" name="contactCity" data-i18n-placeholder="city_ph"
               pattern="[A-Za-z]+" />
           </div>
         </div>
         <div class="classSameLine">
           <div>
             <label data-i18n="phone">Telefonnummer:</label><br />
-            <input required type="tel" placeholder="+43 1234567890" id="kontakt_phone" name="kontakt_phone"
+            <input required type="tel" placeholder="+43 1234567890" id="contactPhone" name="contactPhone"
               pattern="\+?[0-9\s\-]+" data-i18n-placeholder="phone_ph" />
           </div>
         </div>
       </div>
       <br />
       <div>
-        <label for="letzteSchulform" data-i18n="last_school">
+        <label for="lastSchoolForm" data-i18n="last_school">
           Zuletzt besuchte Schule:
         </label>
-        <select name="letzteSchulform" id="letzteSchulform">
+        <select name="lastSchoolForm" id="lastSchoolForm">
+          <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
           <option value="MS/NMS/FMS">MS/NMS/FMS</option>
           <option value="PTS">PTS</option>
           <option value="AHS">AHS</option>
@@ -276,12 +282,12 @@
       <div>
         <label data-i18n="note">Ihre Notize:</label><br />
         <textarea rows="4" cols="50" class="classNoteText" type="textarea"
-          placeholder="Hier können Sie Ihre Notizen eingeben." id="textarea" name="notize"
+          placeholder="Hier können Sie Ihre Notizen eingeben." id="textarea" name="note"
           pattern="^[A-Za-z0-9\s.,!?'-]{0,250}$" data-i18n-placeholder="note_ph"></textarea>
       </div>
       <div>
         <label data-i18n="registration_form">Meldezettel (JPEG/JPG, PNG oder PDF)</label><br />
-        <input required type="file" id="meldezettel" name="meldezettel" />
+        <input required type="file" id="registrationForm" name="registrationForm" />
       </div>
       <div>
         <label data-i18n="birth_cert">Geburtsurkunde (JPEG/JPG, PNG oder PDF)</label><br />

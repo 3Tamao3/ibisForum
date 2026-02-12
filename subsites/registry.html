@@ -36,19 +36,22 @@
       <div>
         <label data-i18n="familyStatus"></label><br />
         <select required class="classProviderDropdown" name="provider" data-i18n-placeholder="provider_ph">
-          <option value="" disabled selected>Bitte auswählen</option>
-          <option value="Sprungbrett">Ledig</option>
-          <option value="ABO_Jugend">ABO Verheiratet</option>
-          <option value="BFI">Geschieden</option>
-          <option value="AMS">verwitwet</option>
+          <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
+          <option value="single" data-i18n="family_status_single"></option>
+          <option value="married" data-i18n="family_status_married"></option>
+          <option value="divorced" data-i18n="family_status_divorced"></option>
+          <option value="widowed" data-i18n="family_status_widowed"></option>
+          <option value="registeredPartnership" data-i18n="family_staus_registered"></option>
         </select>
       </div>
       <br>
       <div>
-        <label data-i18n="scnr"></label><br />
-        <input required type="text" id="scnr" name="scnr" pattern="[0-9]{10}" data-i18n-placeholder="scnr_ph" /><br />
+        <label data-i18n="socialSecurityNumber"></label><br />
+        <input required type="text" id="socialSecurityNumber" name="socialSecurityNumber" pattern="[0-9]{10}"
+          data-i18n-placeholder="socialSecurityNumber_ph" /><br />
       </div>
-      <p data-i18n="scnr_text" id="svnrMessage" style="color: rgb(7, 173, 7); display: none">
+      <p data-i18n="socialSecurityNumber_text" id="socialSecurityNumberMessage"
+        style="color: rgb(7, 173, 7); display: none">
         SVNr ist korrekt!
       </p>
       <div>
@@ -60,7 +63,7 @@
 
         <select required class="classProviderDropdown" name="provider_select" id="provider_select"
           onchange="checkSonstigeProvider()">
-          <option value="" disabled selected>Bitte auswählen</option>
+          <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
 
           <option value="AMS">AMS</option>
           <option value="BFI">BFI</option>
@@ -131,7 +134,7 @@
         </div>
         <div>
           <label for="appointment" data-i18n="appointments"></label>
-          <input required type="text" id="appointment" name="appointment" placeholder="DD-MM-YYYY" />
+          <input required type="text" id="appointment" name="appointment" data-i18n-placeholder="date_ph" />
         </div>
       </div>
       <button type="submit" class="class-btn-liquid liquid" data-i18n="submit"></button>

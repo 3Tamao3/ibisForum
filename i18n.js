@@ -5,10 +5,10 @@ const translations = {
     career_check_button: "Berufs-Check",
     checkin: "Teilnahmebogen / Check In",
 
-    // Multiplle pages
+    // multiple pages
     lastname: "Nachname:",
     firstname: "Vorname:",
-    scnr: "Sozialversicherungsnummer",
+    socialSecurityNumber: "Sozialversicherungsnummer",
     phone: "Telefonnummer:",
     email: "E-Mail:",
     appointments: "Termine:",
@@ -17,6 +17,7 @@ const translations = {
     submit: "Absenden",
     back: "Zurück",
     familyStatus: "Familienstand",
+    choose: "Bitte auswählen",
 
     // registrierung.html
     registration_title: "Registrierung",
@@ -25,24 +26,24 @@ const translations = {
     provider_info:
       "Der Träger ist die Organisation, die den Kurs oder die Maßnahme durchführt, zum Beispiel AMS, BFI oder Jugend am Werk.",
 
-    //teilnahmebogen.html
+    // teilnahmebogen.html
     checkin_title: "Teilnahmebogen/Check-In",
     admin_note:
       "Bitte füllen Sie die nächsten vier Felder nur im Beisein eines Administrators aus.",
-    choose_lehrform: "Bitte wählen Sie eine Lehrform aus:",
-    choose_lehrberuf: "Bitte wählen Sie einen Lehrberuf aus:",
+    choose_teaching_form: "Bitte wählen Sie eine Lehrform aus:",
+    choose_apprenticeship: "Bitte wählen Sie einen Lehrberuf aus:",
 
-    vorlehrzeit: "Vorlehrzeit",
-    vorlehrzeit_ja: "Ja",
-    berufschule: "Berufschule",
-    berufschule_laufend: "Laufend",
+    pre_apprenticeship_period: "Vorlehrzeit",
+    pre_apprenticeship_period_yes: "Ja",
+    vocational_school: "Berufschule",
+    vocational_school_ongoing: "Laufend",
 
     gender: "Geschlecht",
     male: "Männlich",
     female: "Weiblich",
     diverse: "Divers",
 
-    scnr_text: "Die SVNr ist korrekt!",
+    socialSecurityNumber_text: "Die SVNr ist korrekt!",
 
     birthday: "Geburtstag",
     birth_country: "Geburtsland",
@@ -64,7 +65,7 @@ const translations = {
     note: "Ihre Notizen: (Optional)",
 
     // teilnahmebogen.html
-    contact: "Kontaktperson:",
+    contact: "Kontaktperson",
     guardian: "Erziehungsberechtigte/r:",
     father: "Vater:",
     mother: "Mutter:",
@@ -74,6 +75,12 @@ const translations = {
     // dropdowns
     last_school: "Zuletzt besuchte Schule:",
     school_compulsory: "Pflichtschule",
+
+    family_status_single: "Ledig",
+    family_status_married: "Verheiratet",
+    family_status_divorced: "Geschieden",
+    family_status_widowed: "Verwitwet",
+    family_staus_registered: "In eingetragener Partnerschaft",
 
     job_appdev: "Applikationsentwickler - Coding",
     job_office: "Bürokaufleute",
@@ -89,7 +96,7 @@ const translations = {
     // placeholders
     lastname_ph: "Mustermann",
     firstname_ph: "Max",
-    scnr_ph: "1234 010180",
+    socialSecurityNumber_ph: "1234 010180",
     birthday_ph: "TT.MM.JJJJ",
     birth_country_ph: "Österreich",
     birth_city_ph: "Wien",
@@ -103,6 +110,7 @@ const translations = {
     email_ph: "beispiel@domain.com",
     provider_ph: "Sonstige",
     note_ph: "Hier können Sie Ihre Notizen eingeben.",
+    date_ph: "TT.MM.JJJJ",
 
     // success page
     success_title: "Erfolgreich abgeschickt!",
@@ -121,7 +129,7 @@ const translations = {
     // multiple pages (shared)
     lastname: "Last name:",
     firstname: "First name:",
-    scnr: "Social Security Number:",
+    socialSecurityNumber: "Social Security Number:",
     phone: "Phone number:",
     email: "E-Mail:",
     appointments: "Appointments:",
@@ -130,6 +138,7 @@ const translations = {
     submit: "Submit",
     back: "Back",
     familyStatus: "Family Status",
+    choose: "Please choose",
 
     // registrierung.html
     registration_title: "Registration Form",
@@ -142,19 +151,19 @@ const translations = {
     checkin_title: "Registration / Check-In",
     admin_note:
       "Please fill in the next four fields only in the presence of an administrator.",
-    choose_lehrform: "Please choose a training format:",
-    choose_lehrberuf: "Please choose an apprenticeship/occupation:",
-    vorlehrzeit: "Pre-apprenticeship period",
-    vorlehrzeit_ja: "Yes",
-    berufschule: "Vocational school",
-    berufschule_laufend: "Ongoing",
+    choose_teaching_form: "Please choose a training format:",
+    choose_apprenticeship: "Please choose an apprenticeship/occupation:",
+    pre_apprenticeship_period: "Pre-apprenticeship period",
+    pre_apprenticeship_period_yes: "Yes",
+    vocational_school: "Vocational school",
+    vocational_school_ongoing: "Ongoing",
 
     gender: "Gender",
     male: "Male",
     female: "Female",
     diverse: "Diverse",
 
-    scnr_text: "The SSN is correct!",
+    socialSecurityNumber_text: "The SSN is correct!",
 
     birthday: "Date of birth",
     birth_country: "Country of birth",
@@ -177,7 +186,7 @@ const translations = {
 
     // teilnahmebogen.html
     guardian: "Parent/Guardian:",
-    contact: "Contact:",
+    contact: "Contact",
     father: "Father:",
     mother: "Mother:",
     other: "Other People:",
@@ -186,6 +195,12 @@ const translations = {
     // dropdowns
     last_school: "Last school attended:",
     school_compulsory: "Compulsory school",
+
+    family_status_single: "Single",
+    family_status_married: "Married",
+    family_status_divorced: "Divorced",
+    family_status_widowed: "Widowed",
+    family_staus_registered: "Registered Partnership",
 
     job_appdev: "Application Developer - Coding",
     job_office: "Office Administration",
@@ -201,7 +216,7 @@ const translations = {
     // placeholders
     lastname_ph: "Doe",
     firstname_ph: "John",
-    scnr_ph: "1234 010180",
+    socialSecurityNumber_ph: "1234 010180",
     birthday_ph: "DD.MM.YYYY",
     birth_country_ph: "Austria",
     birth_city_ph: "Vienna",
@@ -215,6 +230,7 @@ const translations = {
     email_ph: "example@domain.com",
     note_ph: "You can enter your notes here.",
     provider_ph: "Else",
+    date_ph: "DD.MM.YYYY",
 
     // success page
     success_title: "Successfully submitted!",
