@@ -28,7 +28,7 @@
       <div>
         <label for="teachingFormID" data-i18n="choose_teaching_form"> </label>
         <br />
-        <select required name="teachingForm" id="teachingFormID">
+        <select required name="teachingForm" id="teachingForm">
           <option value="" disabled selected data-i18n="choose"></option>
           <option value="UEBN1">ÜBN1</option>
           <option value="UEBN2">ÜBN2</option>
@@ -40,7 +40,7 @@
       <div>
         <label for="apprenticeship" data-i18n="choose_apprenticeship"> </label>
         <br />
-        <select required name="apprenticeship" id="apprenticeshipID">
+        <select required name="apprenticeship" id="apprenticeship">
           <option value="" disabled selected data-i18n="choose"></option>
           <option value="Application_Developer" data-i18n="job_appdev">
           <option value="Office_Administration" data-i18n="job_office">
@@ -249,7 +249,7 @@
         <label for="lastSchoolForm" data-i18n="last_school">
           Zuletzt besuchte Schule:
         </label>
-        <select name="lastSchoolForm" id="lastSchoolForm">
+        <select required name="lastSchoolForm" id="lastSchoolForm">
           <option value="" disabled selected data-i18n="choose">Bitte auswählen</option>
           <option value="MS/NMS/FMS">MS/NMS/FMS</option>
           <option value="PTS">PTS</option>
@@ -287,7 +287,7 @@
       </div>
       <div>
         <label data-i18n="residence"></label><br />
-        <input type="file" id="residence" name="residence" />
+        <input required type="file" id="residence" name="residence" />
       </div>
       <button class="class-btn-liquid liquid" type="submit" data-i18n="submit">
 

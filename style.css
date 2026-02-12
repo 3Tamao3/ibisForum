@@ -56,6 +56,10 @@ h1 {
   margin-bottom: 18px;
 }
 
+input[type="radio"] {
+  cursor: pointer;
+}
+
 .classHidden {
   display: none;
 }
@@ -117,6 +121,7 @@ select {
   border: 2px solid #000;
   margin-top: 6px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .classSameLine {
@@ -182,6 +187,16 @@ input {
 
 input:user-invalid {
   border: 2.5px solid red !important;
+}
+
+select:user-invalid {
+  border: 2.5px solid red !important;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: blue;
+  transform: scale(1.2);
 }
 
 input:user-valid {
