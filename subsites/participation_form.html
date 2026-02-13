@@ -9,7 +9,6 @@
   <link rel="icon" type="image/png" href="../imgs/img_ibis_logo.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
 </head>
-
 <body>
   <div class="classCenterBox">
     <div class="classTopRow">
@@ -300,38 +299,11 @@
     </form>
     <br />
     <br />
-    <script src="../i18n.js"></script>
   </div>
-  <script src="../validation.js"></script>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/validation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <script>
-    flatpickr("#birthday", {
-      allowInput: true,
-      dateFormat: "d-m-Y",
-      maxDate: new Date().setFullYear(new Date().getFullYear() - 14),
-    });
-  </script>
-  <script>
-    const birthdayInput = document.getElementById("birthday");
-    const kontaktDiv = document.querySelector(".classContactYouth");
-    birthdayInput.addEventListener("change", function () {
-      const birthday = new Date(this.value.split("-").reverse().join("-"));
-      const today = new Date();
-      let age = today.getFullYear() - birthday.getFullYear();
-      const monthDiff = today.getMonth() - birthday.getMonth();
-      if (
-        monthDiff < 0 ||
-        (monthDiff === 0 && today.getDate() < birthday.getDate())
-      ) {
-        age--;
-      }
-      if (age <= 18) {
-        kontaktDiv.style.display = "block";
-      } else {
-        kontaktDiv.style.display = "none";
-      }
-    });
-  </script>
+  <script src="../js/checkin.js"></script>
 </body>
 
 </html>

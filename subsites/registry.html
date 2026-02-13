@@ -51,7 +51,7 @@
           data-i18n-placeholder="social_security_number_ph" /><br />
       </div>
       <p data-i18n="social_security_number_text" id="socialSecurityNumberMessage"
-        style="color: rgb(7, 173, 7); display: none">
+        style="color: rgb(7, 173, 7); display: none"></p>
       <div>
         <label>
           <span data-i18n="provider"></span>
@@ -59,8 +59,8 @@
             🛈
           </span> </label><br />
 
-        <select required class="classProviderDropdown" name="provider_select" id="provider_select"
-          onchange="checkSonstigeProvider()">
+        <select required class="classProviderDropdown" name="provider_select" id="provider_select">
+
           <option value="" disabled selected data-i18n="choose"></option>
 
           <option value="AMS">AMS</option>
@@ -141,75 +141,10 @@
       </a>
     </form>
   </div>
-  <script src="../i18n.js"></script>
-  <script>
-    const careerYes = document.getElementById("career_yes");
-    const careerNo = document.getElementById("career_no");
-    const extraFields = document.getElementById("careerExtraFields");
-
-    const extraInputs = extraFields.querySelectorAll(
-      "input, select, textarea",
-    );
-
-    function setExtraFieldsEnabled(enabled) {
-      extraFields.style.display = enabled ? "block" : "none";
-
-      extraInputs.forEach((el) => {
-        el.disabled = !enabled;
-
-        if (el.id === "phone" || el.id === "email") {
-          el.required = enabled;
-        }
-
-        if (!enabled) {
-          el.value = "";
-        }
-      });
-    }
-
-    function updateCareerFields() {
-      const shouldShow = careerYes && careerYes.checked;
-      setExtraFieldsEnabled(shouldShow);
-    }
-
-    updateCareerFields();
-
-    if (careerYes) careerYes.addEventListener("change", updateCareerFields);
-    if (careerNo) careerNo.addEventListener("change", updateCareerFields);
-  </script>
-
-  <script src="../validation.js"></script>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/validation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <script>
-    flatpickr("#appointment", {
-      allowInput: true,
-      dateFormat: "d-m-Y",
-      minDate: "today",
-      maxDate: new Date().fp_incr(30),
-      disable: [
-        "today",
-        function (date) {
-          return date.getDay() !== 1;
-        },
-      ],
-    });
-  </script>
-  <script>
-    function checkSonstigeProvider() {
-      const dropdown = document.getElementById("provider_select");
-      const input = document.getElementById("provider_sonstige");
-
-      const isSonstige = dropdown.value === "sonstige";
-
-      input.style.display = isSonstige ? "block" : "none";
-      input.required = isSonstige;
-
-      if (!isSonstige) {
-        input.value = "";
-      }
-    }
-    document.addEventListener("DOMContentLoaded", checkSonstigeProvider);
-  </script>
+  <script src="../js/registry.js"></script>
 
 </body>
 
