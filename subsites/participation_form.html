@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" href="../imgs/img_ibis_logo.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
 </head>
+
 <body>
   <div class="classCenterBox">
     <div class="classTopRow">
@@ -19,7 +20,7 @@
       </div>
     </div>
     <h1 data-i18n="checkin_title"></h1>
-    <form action="../connect.php" method="post" enctype="multipart/form-data">
+    <form action="../connect.php" method="post" enctype="multipart/form-data" id="myForm">
       <div>
         <label data-i18n="admin_note"> </label>
       </div>
@@ -266,27 +267,27 @@
       </div>
       <div>
         <label data-i18n="registration_form"></label><br />
-        <input required type="file" id="registrationForm" name="registrationForm" />
+        <input type="file" id="registrationForm" name="registrationForm" class="file-input" />
       </div>
       <div>
         <label data-i18n="birth_cert"></label><br />
-        <input required type="file" id="birthCert" name="birthCert" />
+        <input type="file" id="birthCert" name="birthCert" class="file-input" />
       </div>
       <div>
         <label data-i18n="citizenship"></label><br />
-        <input required type="file" id="citizenship" name="citizenship" />
+        <input type="file" id="citizenship" name="citizenship" class="file-input" />
       </div>
       <div>
         <label data-i18n="bank_card"></label><br />
-        <input required type="file" id="bankCard" name="bankCard" />
+        <input type="file" id="bankCard" name="bankCard" class="file-input" />
       </div>
       <div>
         <label data-i18n="ecard"></label><br />
-        <input required type="file" id="ecard" name="ecard" />
+        <input type="file" id="ecard" name="ecard" class="file-input" />
       </div>
       <div>
         <label data-i18n="residence"></label><br />
-        <input required type="file" id="residence" name="residence" />
+        <input type="file" id="residence" name="residence" class="file-input" />
       </div>
       <button class="class-btn-liquid liquid" type="submit" data-i18n="submit">
 
@@ -302,6 +303,28 @@
   <script src="../js/validation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="../js/checkin.js"></script>
+  <script src="../js/checkFileInput.js"></script>
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function () {
+
+      const fileInputs = document.querySelectorAll(".file-input");
+
+      fileInputs.forEach(function (input) {
+
+        if (input.files.length === 0) {
+          input.style.border = "2px solid red";
+        } else {
+          input.style.border = "2px solid green";
+        }
+
+      });
+
+      // IMPORTANT:
+      // We do NOT use preventDefault()
+      // So the form still submits and stores files
+
+    });
+  </script>
 </body>
 
 </html>
