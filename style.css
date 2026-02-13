@@ -2,9 +2,10 @@
   border: 2px solid lightgray;
   max-width: 720px;
   margin: 75px auto;
-  padding: 20px 30px;
+  padding: 35px 30px;
   border-radius: 15px;
   text-align: center;
+  box-shadow: #000 0px 0px 5px;
 }
 
 .classTopRow {
@@ -52,7 +53,7 @@ h1 {
   padding: 10px;
   font-size: 18px;
   border-radius: 6px;
-  border: 2px solid #000;
+  border: 1px solid #000;
   margin-bottom: 18px;
 }
 
