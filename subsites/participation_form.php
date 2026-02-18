@@ -42,16 +42,16 @@
         <br />
         <select required name="apprenticeship" id="apprenticeship">
           <option value="" disabled selected data-i18n="choose"></option>
-          <option value="Application_Developer" data-i18n="job_appdev">
-          <option value="Office_Administration" data-i18n="job_office">
-          <option value="Drugstore_Specialist" data-i18n="job_drugstore">
-          <option value="Retail" data-i18n="job_retail">
-          <option value="Warehouse_Logistics" data-i18n="job_logistics">
-          <option value="Real_Estate_Management" data-i18n="job_realestate">
-          <option value="Information_Technology" data-i18n="job_it_ops">
-          <option value="Freight_Forwarding" data-i18n="job_forwarding">
-          <option value="Cosmetics" data-i18n="job_cosmetics">
-          <option value="PKA" data-i18n="job_pka">
+          <option value="Application_Developer" data-i18n="job_appdev"></option>
+          <option value="Office_Administration" data-i18n="job_office"></option>
+          <option value="Drugstore_Specialist" data-i18n="job_drugstore"></option>
+          <option value="Retail" data-i18n="job_retail"></option>
+          <option value="Warehouse_Logistics" data-i18n="job_logistics"></option>
+          <option value="Real_Estate_Management" data-i18n="job_realestate"></option>
+          <option value="Information_Technology" data-i18n="job_it_ops"></option>
+          <option value="Freight_Forwarding" data-i18n="job_forwarding"></option>
+          <option value="Cosmetics" data-i18n="job_cosmetics"></option>
+          <option value="PKA" data-i18n="job_pka"></option>
         </select>
       </div>
       <br />
@@ -84,12 +84,14 @@
       <div class="classSameLine">
         <div>
           <label data-i18n="firstname"></label><br />
-          <input required type="text" placeholder="Max" id="firstName" name="firstName" pattern="[A-Za-z]+"
+          <input required type="text" placeholder="Max" id="firstName" name="firstName" pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+"
+
             data-i18n-placeholder="firstname_ph" />
         </div>
         <div>
           <label data-i18n="lastname"></label><br />
-          <input required type="text" id="lastName" name="lastName" pattern="[A-Za-z]+"
+          <input required type="text" id="lastName" name="lastName" pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+"
+
             data-i18n-placeholder="lastname_ph" />
         </div>
       </div>
@@ -118,18 +120,21 @@
       </div>
       <div>
         <label data-i18n="birth_country"></label><br />
-        <input required type="text" placeholder="Österreich" id="birthCountry" name="birthCountry" pattern="[A-Za-z]+"
+        <input required type="text" placeholder="Österreich" id="birthCountry" name="birthCountry" pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+"
+
           data-i18n-placeholder="birth_country_ph" />
       </div>
       <div>
         <label data-i18n="birth_city"></label><br />
-        <input required type="text" placeholder="Wien" id="birthCity" name="birthCity" pattern="[A-Za-z]+"
+        <input required type="text" placeholder="Wien" id="birthCity" name="birthCity" pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+"
+
           data-i18n-placeholder="birth_city_ph" />
       </div>
       <div class="classContactBox">
         <div>
           <label data-i18n="street"></label><br />
-          <input required type="text" placeholder="Hauptstraße" id="street" name="street" pattern="[A-Za-z]+"
+          <input required type="text" placeholder="Hauptstraße" id="street" name="street" pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+"
+
             data-i18n-placeholder="street_ph" />
         </div>
         <div class="classSameLine">
@@ -155,7 +160,7 @@
           <div>
             <label data-i18n="city"></label><br />
             <input required type="text" placeholder="Wien" id="city" name="city" data-i18n-placeholder="city_ph"
-              pattern="[A-Za-z]+" />
+              pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+" />
           </div>
         </div>
       </div>
@@ -176,7 +181,8 @@
         <div>
           <br />
           <label data-i18n="advicer"></label>
-          <input type="text" placeholder="Erika Musterfrau" name="contactAdvicer" pattern="[A-Za-z]+"
+          <input type="text" placeholder="Erika Musterfrau" name="contactAdvicer" pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+"
+
             data-i18n-placeholder="advicer_ph" />
         </div>
         <div class="classContactYouth">
@@ -194,17 +200,19 @@
           <div>
             <label data-i18n="firstname">Vorname</label>
             <input required type="text" placeholder="Max" name="contactFirstName" data-i18n-placeholder="firstName_ph"
-              pattern="[A-Za-z]+" />
+              pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+" />
           </div>
           <div>
             <label data-i18n="lastname">Nachname</label>
-            <input required type="text" placeholder="Mustermann" name="contactLastName" pattern="[A-Za-z]+"
+            <input required type="text" placeholder="Mustermann" name="contactLastName" pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+"
+
               data-i18n-placeholder="lastName_ph" />
           </div>
         </div>
         <div>
           <label data-i18n="street">Straße</label>
-          <input required type="text" placeholder="Hauptstraße" name="contactStreet" pattern="[A-Za-z]+"
+          <input required type="text" placeholder="Hauptstraße" name="contactStreet" pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+"
+
             data-i18n-placeholder="street_ph" />
         </div>
         <div class="classSameLine">
@@ -233,7 +241,7 @@
           <div>
             <label data-i18n="city">Ort</label>
             <input required type="text" placeholder="Wien" name="contactCity" data-i18n-placeholder="city_ph"
-              pattern="[A-Za-z]+" />
+              pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+" />
           </div>
         </div>
         <div class="classSameLine">
@@ -256,7 +264,7 @@
           <option value="AHS">AHS</option>
           <option value="BHS">BHS</option>
           <option value="BS">BS</option>
-          <option value="Compulsory_School" data-i18n="school_compulsory">
+          <option value="Compulsory_School" data-i18n="school_compulsory"></option>
         </select>
       </div>
       <br />
@@ -292,7 +300,7 @@
       <button class="class-btn-liquid liquid" type="submit" data-i18n="submit">
 
       </button>
-      <a href="../index.html">
+      <a href="../index.php">
         <button class="class-btn-liquid liquid" type="button" data-i18n="back">
 
         </button>
@@ -305,11 +313,11 @@
   <script src="../js/checkin.js"></script>
   <script src="../js/checkFileInput.js"></script>
   <script>
-    document.getElementById("myForm").addEventListener("submit", function () {
+    document.getElementById("myForm").addEventListener("submit", function() {
 
       const fileInputs = document.querySelectorAll(".file-input");
 
-      fileInputs.forEach(function (input) {
+      fileInputs.forEach(function(input) {
 
         if (input.files.length === 0) {
           input.style.border = "2px solid red";

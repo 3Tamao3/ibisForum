@@ -24,12 +24,14 @@
       <div class="classSameLine">
         <div>
           <label data-i18n="lastname"></label><br />
-          <input required type="text" id="lastName" name="lastName" pattern="[A-Za-z]+"
+          <input required type="text" id="lastName" name="lastName" pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+"
+
             data-i18n-placeholder="lastname_ph" /><br />
         </div>
         <div>
           <label data-i18n="firstname"></label><br />
-          <input required type="text" id="firstName" name="firstName" pattern="[A-Za-z]+"
+          <input required type="text" id="firstName" name="firstName" pattern="[A-Za-zÀ-žßäöüÄÖÜ\s\-]+"
+
             data-i18n-placeholder="firstname_ph" /><br />
         </div>
       </div>
@@ -136,7 +138,7 @@
         </div>
       </div>
       <button type="submit" class="class-btn-liquid liquid" data-i18n="submit"></button>
-      <a href="../index.html">
+      <a href="../index.php">
         <button type="button" class="class-btn-liquid liquid" data-i18n="back"></button>
       </a>
     </form>
