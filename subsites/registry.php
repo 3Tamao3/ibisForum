@@ -20,7 +20,7 @@
       </div>
     </div>
     <h1 data-i18n="registration_title"></h1>
-    <form action="../connect.php" method="post" enctype="multipart/form-data">
+    <form action="../connect_registry.php" method="post" enctype="multipart/form-data">
       <div class="classSameLine">
         <div>
           <label data-i18n="lastname"></label><br />

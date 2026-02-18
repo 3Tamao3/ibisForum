@@ -20,7 +20,7 @@
       </div>
     </div>
     <h1 data-i18n="checkin_title"></h1>
-    <form action="../connect.php" method="post" enctype="multipart/form-data" id="myForm">
+    <form action="../connect_checkin.php" method="post" enctype="multipart/form-data" id="myForm">
       <div>
         <label data-i18n="admin_note"> </label>
       </div>
