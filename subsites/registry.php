@@ -138,7 +138,7 @@
         </div>
         <div>
           <label for="appointment" data-i18n="appointments"></label>
-          <input required type="text" id="appointment" name="appointment" data-i18n-placeholder="date_ph" />
+          <input required type="text" id="appointment" name="appointment" placeholder="YYYY.MM.DD" />
         </div>
       </div>
       <button type="submit" class="class-btn-liquid liquid" data-i18n="submit"></button>
@@ -151,7 +151,5 @@
   <script src="../js/validation.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="../js/registry.js"></script>
-
 </body>
-
 </html>

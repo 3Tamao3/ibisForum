@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize flatpickr calendar
   flatpickr("#birthday", {
     allowInput: true,
-    dateFormat: "d-m-Y",
+    dateFormat: "d.m.Y",
     maxDate: new Date().setFullYear(new Date().getFullYear() - 14),
   });
 

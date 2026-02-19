@@ -71,21 +71,17 @@ document.addEventListener("DOMContentLoaded", function () {
   // 3) flatpickr for appointment
   // ----------------------------
   // This only works if flatpickr library is loaded before this file.
-  if (typeof flatpickr !== "undefined") {
-    flatpickr("#appointment", {
-      allowInput: true,
-      dateFormat: "d-m-Y",
-      minDate: "today",
-      maxDate: new Date().fp_incr(30),
-      disable: [
-        "today",
-        function (date) {
-          // Only allow Monday (1)
-          return date.getDay() !== 1;
-        },
-      ],
-    });
-  } else {
-    console.warn("flatpickr is not loaded. Did you include the CDN script before registry.js?");
-  }
+  flatpickr("#appointment", {
+    allowInput: true,
+    dateFormat: "Y-m-d",
+    minDate: "today",
+    maxDate: new Date().fp_incr(30),
+    disable: [
+      "today",
+      function (date) {
+        // Only allow Monday (1)
+        return date.getDay() !== 1;
+      },
+    ],
+  });
 });
