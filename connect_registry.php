@@ -28,12 +28,35 @@ try {
 }
 
 // 4) Helper function to safely read POST values
-function post($key)
+function post(string $key): ?string
 {
-    return isset($_POST[$key]) ? trim($_POST[$key]) : null;
+    return isset($_POST[$key]) ? trim((string)$_POST[$key]) : null;
 }
 
-// 5) Read values from the form (names must match your HTML 'name=""')
+// 5) Helper: convert common date strings to MySQL DATE (YYYY-MM-DD)
+function toMysqlDate(?string $dateString): ?string
+{
+    if (!$dateString) return null;
+
+    // Try common formats first
+    $formats = ["Y-m-d", "d.m.Y", "d/m/Y"];
+    foreach ($formats as $f) {
+        $dt = DateTime::createFromFormat($f, $dateString);
+        if ($dt && $dt->format($f) === $dateString) {
+            return $dt->format("Y-m-d");
+        }
+    }
+
+    // Last attempt: let PHP guess
+    $ts = strtotime($dateString);
+    if ($ts !== false) {
+        return date("Y-m-d", $ts);
+    }
+
+    return null;
+}
+
+// 6) Read values from the form (names must match your HTML 'name=""')
 $lastName = post("lastName");
 $firstName = post("firstName");
 $familyStatus = post("familyStatus");
@@ -47,16 +70,19 @@ $career = post("career"); // "career_yes" or "career_no"
 // These fields only exist if career_yes, but we still read them safely:
 $phone = post("phone");
 $email = post("email");
-$appointment = post("appointment");
+$appointmentRaw = post("appointment");
 
-// 6) If career_no, ignore the extra fields so you don't store garbage
+// Convert appointment to MySQL format (YYYY-MM-DD)
+$appointment = toMysqlDate($appointmentRaw);
+
+// 7) If career_no, ignore the extra fields so you don't store garbage
 if ($career !== "career_yes") {
     $phone = null;
     $email = null;
     $appointment = null;
 }
 
-// 7) Insert into database using a prepared statement
+// 8) Insert into database using a prepared statement
 $sql = "INSERT INTO registry
     (lastName, firstName, familyStatus, socialSecurityNumber, provider_select, provider_sonstige, career, phone, email, appointment)
 VALUES

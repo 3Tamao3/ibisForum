@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // This only works if flatpickr library is loaded before this file.
   flatpickr("#appointment", {
     allowInput: true,
-    dateFormat: "Y-m-d",
+    dateFormat: "d-m-Y",
     minDate: "today",
     maxDate: new Date().fp_incr(30),
     disable: [
