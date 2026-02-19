@@ -16,10 +16,10 @@
     <div class="classTopRow">
       <img src="../imgs/img_ibis_logo.png" alt="ibis acam Logo" />
       <div class="classLanguageButtons">
-        <button class="class-btn-liquid liquid" type="button" id="btnDE"><span class="fi fi-de"></span>
+        <button type="button" id="btnDE"><span class="fi fi-de"></span>
         </button>
 
-        <button class="class-btn-liquid liquid" type="button" id="btnEN"><span class="fi fi-gb"></span>
+        <button type="button" id="btnEN"><span class="fi fi-gb"></span>
         </button>
       </div>
     </div>
