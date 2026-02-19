@@ -7,6 +7,7 @@
   <title data-i18n="page_title_index"></title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="imgs/img_ibis_logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
 </head>
 
 <body>
@@ -15,9 +16,11 @@
 
       <img src="imgs/img_ibis_logo.png" alt="ibis acam Logo" />
       <div class="classLanguageButtons">
-        <button class="class-btn-liquid liquid" type="button" id="btnDE">DE</button>
-        
-        <button class="class-btn-liquid liquid" type="button" id="btnEN">EN</button>
+        <button class="class-btn-liquid liquid" type="button" id="btnDE"><span class="fi fi-de"></span>
+        </button>
+
+        <button class="class-btn-liquid liquid" type="button" id="btnEN"><span class="fi fi-gb"></span>
+        </button>
       </div>
     </div>
     <h1 data-i18n="choose_form"></h1>
